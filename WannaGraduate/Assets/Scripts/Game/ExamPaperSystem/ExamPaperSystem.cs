@@ -7,13 +7,18 @@ public class ExamPaperSystem : MonoBehaviour
 {
     List<ExamPaperData> paperData = new();
 
-    public void CreatePapers(int count)
+    public void CreatePapers(int paperCount)
     {
+        paperData.Clear();
+
         // 문제 데이터 베이스에서 랜덤하게 문제 가져오기
         List<EQuestionType> questionTypes = CSVDataContainer_WeekQuestionData.GetQuestionTypesForExamPaper(PlayerSaveDataModel.data.week);
-        List<CSVDataRow_ExamQuestionData> questionData = CSVDataContainer_ExamQuestionData.GetRandomQuestionData(questionTypes);
+        List<CSVDataRow_ExamQuestionData> questionCSVData = CSVDataContainer_ExamQuestionData.GetRandomQuestionData(questionTypes);
 
-        
+        for(int i=0;i< paperCount; i++)
+        {
+            paperData.Add(CreatePaper(questionCSVData));
+        }
     }
 
 
@@ -21,9 +26,16 @@ public class ExamPaperSystem : MonoBehaviour
     
 
 
-    private void CreatePaper()
+    private ExamPaperData CreatePaper(List<CSVDataRow_ExamQuestionData> csvData)
     {
+        ExamPaperData result = new();
 
+
+
+
+
+
+        return result;
     }
 
 

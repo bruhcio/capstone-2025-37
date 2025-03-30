@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfa4b3d7d8dc941855a2cfab3be877, type: 3}
+  m_Name: ExamQuestionData
+  m_EditorClassIdentifier: 
+  m_Items:
+  - QuestionType: 0
+    QuestionId: 0
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 1
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 2
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 3
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 4
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 5
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 6
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 7
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 8
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 9
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 10
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 11
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 12
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 13
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 14
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 15
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 16
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 17
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 18
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 19
+    Answers: O
+  - QuestionType: 0
+    QuestionId: 20
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 21
+    Answers: X
+  - QuestionType: 0
+    QuestionId: 22
+    Answers: O
+  - QuestionType: 1
+    QuestionId: 0
+    Answers: 2
+  - QuestionType: 1
+    QuestionId: 1
+    Answers: 0
+  - QuestionType: 1
+    QuestionId: 2
+    Answers: 0
+  - QuestionType: 1
+    QuestionId: 3
+    Answers: 3
+  - QuestionType: 1
+    QuestionId: 4
+    Answers: 2
+  - QuestionType: 1
+    QuestionId: 5
+    Answers: 3
+  - QuestionType: 1
+    QuestionId: 6
+    Answers: 1
+  - QuestionType: 1
+    QuestionId: 7
+    Answers: 1
+  - QuestionType: 1
+    QuestionId: 8
+    Answers: 2
+  - QuestionType: 1
+    QuestionId: 9
+    Answers: 3
+  - QuestionType: 1
+    QuestionId: 10
+    Answers: 0
+  - QuestionType: 1
+    QuestionId: 11
+    Answers: 2
+  - QuestionType: 1
+    QuestionId: 12
+    Answers: 1

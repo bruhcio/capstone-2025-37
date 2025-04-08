@@ -97,7 +97,7 @@ public class CalendarDailyView : UI_Base
         this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect());
     }
 
-    private void UpdateView()
+    private void UpdateView(int symbolId)
     {
         if (symbolId == -1)
         {
@@ -109,6 +109,10 @@ public class CalendarDailyView : UI_Base
         var symbolData = CSVDataContainer_SymbolData.GetSymbolData(symbolId);
         icon.sprite = ResourcesCache.symbolSprites[symbolId];
         backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
+    }
+    private void UpdateView()
+    {
+        UpdateView(this.symbolId);
     }
 
     IEnumerator RollSymbolDirection()
@@ -132,7 +136,11 @@ public class CalendarDailyView : UI_Base
         }
 
         UpdateView();
-        GetComponent<ObjectScaleBouncer>().PlayEffect();
+
+        if(this.symbolId >= 0)
+        {
+            GetComponent<ObjectScaleBouncer>().PlayEffect();
+        }
 
         yield return new WaitForSeconds(0.5f);
         this.onDailyDirectionEnd?.Invoke();

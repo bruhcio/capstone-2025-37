@@ -5199,6 +5199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calendarView: {fileID: 1014974848}
+  canRollCalendar: 1
 --- !u!114 &1443403346
 MonoBehaviour:
   m_ObjectHideFlags: 0

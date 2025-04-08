@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cccfa4b3d7d8dc941855a2cfab3be877, type: 3}
+  m_Name: SymbolData
+  m_EditorClassIdentifier: 
+  m_Items:
+  - ItemId: 0
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 1
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 2
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 3
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 4
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 5
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 6
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 7
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 8
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 9
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 10
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 11
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 12
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 13
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 14
+    Rarity: 0
+    BaseRevenue: 1
+  - ItemId: 15
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 16
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 17
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 18
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 19
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 20
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 21
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 22
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 23
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 24
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 25
+    Rarity: 1
+    BaseRevenue: 3
+  - ItemId: 26
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 27
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 28
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 29
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 30
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 31
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 32
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 33
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 34
+    Rarity: 2
+    BaseRevenue: 6
+  - ItemId: 35
+    Rarity: 3
+    BaseRevenue: 12
+  - ItemId: 36
+    Rarity: 3
+    BaseRevenue: 12
+  - ItemId: 37
+    Rarity: 3
+    BaseRevenue: 12
+  - ItemId: 38
+    Rarity: 3
+    BaseRevenue: 12
+  - ItemId: 39
+    Rarity: 3
+    BaseRevenue: 12

@@ -12,16 +12,21 @@ public class CalendarDailyView : UI_Base
     [SerializeField, UIAutoAttachField] Image icon;
     [SerializeField] Image backgroundImage;
 
+    int calendarId;
     int symbolId;
-    System.Action onDailyDirectionEnd;
+    Action onDailyDirectionEnd;
+    Action<IEnumerator> bindSpecialEffect;
     RP_Symbol symbolScript;
 
     // 심볼을 스핀합니다
-    public void RollSymbol(int symbolId, System.Action onDailyDirectionEnd)
+    public void RollSymbol(int calendarId, Action onDailyDirectionEnd, Action<IEnumerator> bindSpecialEffect)
     {
-        this.symbolId = symbolId;
+        this.calendarId = calendarId;
+        this.symbolId = PlayerSaveDataModel.data.calendar[calendarId];
         this.onDailyDirectionEnd = onDailyDirectionEnd;
+        this.bindSpecialEffect = bindSpecialEffect;
         InitSymbol();
+
         StartCoroutine(RollSymbolDirection());
     }
 
@@ -52,11 +57,6 @@ public class CalendarDailyView : UI_Base
     }
 
 
-    // 심볼의 특수 효과 이벤트를 등록합니다
-    public void BindSpecialEffect()
-    {
-
-    }
 
 
 
@@ -75,18 +75,26 @@ public class CalendarDailyView : UI_Base
     // 심볼 초기화 작업
     private void InitSymbol()
     {
+        if (this.symbolId == -1)
+        {
+            return;
+        }
+
+        // rp 계산을 위한 stat system 초기화
         GetComponent<StatSystem>().ClearBuffsAll();
         var csvData = CSVDataContainer_SymbolData.GetSymbolData(this.symbolId);
-        GetComponent<StatSystem>().AddBuff(EStatTypes.EarnRP, EStatCalcTypes.Constant, symbolScript.GetBaseRevenue(csvData.BaseRevenue));
+        GetComponent<StatSystem>().AddBuff(EStatTypes.EarnRP, EStatCalcTypes.Constant, csvData.BaseRevenue);
 
-        Type type = Type.GetType("RP_Symbol_" + this.symbolId);
+        // 심볼 효과 스크립트 로드
+        Type type = Type.GetType("RP_Symbol_" + this.symbolId + ", Assembly-CSharp");
 
         if (type == null)
         {
-            type = Type.GetType("RP_Symbol");
+            type = Type.GetType("RP_Symbol, Assembly-CSharp");
         }
 
         symbolScript = (RP_Symbol)gameObject.AddComponent(type);
+        this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect());
     }
 
     private void UpdateView()

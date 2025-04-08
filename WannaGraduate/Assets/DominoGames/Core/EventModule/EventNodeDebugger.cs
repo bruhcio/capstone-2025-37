@@ -17,7 +17,7 @@ namespace DominoGames.Core.EventSystem.Test
         [Button]
         public void Test()
         {
-            DominoEventSystem.Pub(EEventTypes.None, true);
+            //DominoEventSystem.Pub(EEventTypes.None, true);
         }
 
 

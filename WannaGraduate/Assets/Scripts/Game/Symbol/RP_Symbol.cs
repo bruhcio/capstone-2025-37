@@ -1,16 +1,13 @@
+using DominoGames.Core.EventSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RP_Symbol : MonoBehaviour
 {
-    public virtual int GetBaseRevenue(int csvBaseRevenue)
+    public virtual IEnumerator SpecialEffect()
     {
-        return csvBaseRevenue;
-    }
-
-    public virtual void BindSpecialEffect()
-    {
-
+        DominoEventSystem.Pub(EEventTypes.OnOneDaySpecialEffectEnd);
+        yield break;
     }
 }

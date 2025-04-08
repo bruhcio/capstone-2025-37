@@ -7,7 +7,7 @@ namespace DominoGames.Core.EventSystem
 {
     public class EventNode : MonoBehaviour
     {
-        [SerializeField] protected EEventTypes eventId = EEventTypes.None;
+        [SerializeField] protected EEventTypes eventId = EEventTypes.OnOneDaySpecialEffectEnd;
         [SerializeField] protected bool subscriptionStatus = true;
 
         public virtual EEventTypes GetEventId()

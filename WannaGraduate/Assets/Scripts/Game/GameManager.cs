@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     {
         List<int> result = new(PlayerSaveDataModel.data.ownedSymbols);
 
-        for (int i = 0; i < result.Count; i++)
+        for (int i = result.Count; i < 20; i++)
         {
             result.Add(-1);
         }

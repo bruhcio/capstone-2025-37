@@ -1,11 +1,16 @@
 using BBB.CSVData;
+using DominoGames.Core.EventSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CalendarView : UI_Base
 {
-    [UIAutoAttachField, SerializeField] List<CalendarDailyView> dayObjects;
+    public static CalendarView Instance;
+    [UIAutoAttachField] public List<CalendarDailyView> dayObjects;
+
+    
+
 
     // 캘린더 초기화
     public void ClearCalendar()
@@ -23,38 +28,45 @@ public class CalendarView : UI_Base
         StartCoroutine(RollCalendarDirection());
     }
 
+
+
+
+
+
+
+
+
+
+
     // 기본 수익 획득
-    public void EarnBaseRevenue()
+    private void EarnBaseRevenue()
     {
 
     }
 
+    List<IEnumerator> specialEffectCoroutines = new();
     // 특수 효과 재생
-    public void PlaySpecialEffect()
+    private IEnumerator PlaySpecialEffect()
     {
-
+        for(int i = 0; i < specialEffectCoroutines.Count; i++)
+        {
+            yield return specialEffectCoroutines[i];
+        }
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // 일정 스핀 연출
     IEnumerator RollCalendarDirection()
     {
+        oneDaySpecialEffectEnd = 0;
+
         // Update day view
         for (int i = 0; i < dayObjects.Count; i++)
         {
-            dayObjects[i].RollSymbol(PlayerSaveDataModel.data.calendar[i], OnCalendarDailyDirectionEnd);
+            dayObjects[i].RollSymbol(i, OnCalendarDailyDirectionEnd, coroutine =>
+            {
+                specialEffectCoroutines.Add(coroutine);
+            });
             yield return new WaitForSeconds(0.02f);
         }
     }
@@ -66,16 +78,38 @@ public class CalendarView : UI_Base
 
         if(dailyDirectionCount >= 20)
         {
-            
+            StartCoroutine(PlaySpecialEffect());
         }
     }
 
-    // 기본 수익 정산 연출
-    IEnumerator CalcBaseRevenuesDirection()
+
+
+
+
+
+
+
+
+
+    int oneDaySpecialEffectEnd = 0;
+    private void BindEvents()
     {
-        for(int i = 0; i < dayObjects.Count; i++)
+        DominoEventSystem.Sub(EEventTypes.OnOneDaySpecialEffectEnd, () =>
         {
+            oneDaySpecialEffectEnd++;
 
-        }
+            if(oneDaySpecialEffectEnd >= 20)
+            {
+                DominoEventSystem.Pub(EEventTypes.OnSpecialEffectEnd);
+            }
+        });
     }
+
+
+    private void Awake()
+    {
+        Instance = this;
+        BindEvents();
+    }
+
 }

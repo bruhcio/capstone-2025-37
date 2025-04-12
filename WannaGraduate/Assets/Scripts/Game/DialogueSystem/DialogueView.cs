@@ -14,6 +14,34 @@ public class DialogueView : MonoBehaviour
 
     TweenerCore<string, string, StringOptions> doTextTween;
 
+    bool activeState = false;
+
+    public void SetViewActive(bool status)
+    {
+        if(status == activeState)
+        {
+            return;
+        }
+
+        if (status)
+        {
+            activeState = true;
+            gameObject.SetActive(true);
+            GetComponent<CanvasGroup>().alpha = 0f;
+            GetComponent<CanvasGroup>().DOFade(1f, 0.5f).SetEase(Ease.OutQuart);
+            GetComponent<Animator>().Play("StartDialogue", 0, 0f);
+        }
+        else
+        {
+            activeState = false;
+            GetComponent<CanvasGroup>().alpha = 1f;
+            GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.OutQuart).OnComplete(() =>
+            {
+                gameObject.SetActive(false);
+            });
+        }
+    }
+
     public void PlayView(Sprite portraitSprite, string name, string content)
     {
         portraitImage.sprite = portraitSprite;

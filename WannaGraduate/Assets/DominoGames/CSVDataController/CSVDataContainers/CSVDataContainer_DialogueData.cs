@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections.Generic;
+using I2.Loc;
 
 namespace BBB.CSVData
 {
@@ -51,5 +52,15 @@ namespace BBB.CSVData
         public string DialogueId, CharacterId;
         public int Index;
         public string Korean, English;
+
+        public string GetDialogueTranslation()
+        {
+            if(LocalizationManager.GetCurrentDeviceLanguage() == "Korean")
+            {
+                return Korean;
+            }
+
+            return English;
+        }
     }
 }

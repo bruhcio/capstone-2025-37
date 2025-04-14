@@ -15,9 +15,6 @@ namespace DominoGames.RPG
     // Author JYS & CHS
     // Version 1.1.0
 
-    // [설명]
-    // 캐릭터 스탯 시스템 (+ Buff Control)
-
     public class StatSystem : SerializedMonoBehaviour
     {
         public bool InitOnAwake = true;
@@ -26,11 +23,11 @@ namespace DominoGames.RPG
         [ShowIf("isGlobal")]
         public string globalKey;
 
-
-        private Dictionary<EStatTypes, List<System.Action>> onStatChangedEvents = new();
+        public Dictionary<EStatTypes, float> originStatValues = new();
         public static Dictionary<string, StatSystem> globalStats = new();
 
-        public Dictionary<EStatTypes, float> originStatValues = new();
+        private Dictionary<EStatTypes, List<System.Action>> onStatChangedEvents = new();
+
         [Button]
         public void InitOriginStatValues()
         {
@@ -78,8 +75,6 @@ namespace DominoGames.RPG
                 globalStats[globalKey] = this;
             }
         }
-
-
         public void ClearOnStatChangedEvents()
         {
             this.onStatChangedEvents.Clear();
@@ -107,8 +102,6 @@ namespace DominoGames.RPG
 
             this.onStatChangedEvents[statType].Add(action);
         }
-
-
 
 
         private List<DoubleDictionary<EStatTypes, float>> statBuffs = new()
@@ -184,7 +177,7 @@ namespace DominoGames.RPG
 
     public enum EStatTypes
     {
-        EarnRP,     // 연구 포인트 획득량 증가
+        EarnRP,                     // 연구 포인트 획득량 증가
         HighRarityAppearance,       // (일반 제외) 고급, 희귀, 전설 급 심볼 출현 확률 증가
     }
 

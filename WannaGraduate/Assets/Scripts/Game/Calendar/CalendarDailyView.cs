@@ -22,7 +22,7 @@ public class CalendarDailyView : UI_Base
     public void RollSymbol(int calendarId, Action onDailyDirectionEnd, Action<IEnumerator> bindSpecialEffect)
     {
         this.calendarId = calendarId;
-        this.symbolId = PlayerSaveDataModel.data.calendar[calendarId];
+        this.symbolId = PlayerSaveDataModel.data.calenderSymbols[calendarId].Id;
         this.onDailyDirectionEnd = onDailyDirectionEnd;
         this.bindSpecialEffect = bindSpecialEffect;
         InitSymbol();
@@ -55,21 +55,6 @@ public class CalendarDailyView : UI_Base
         PlayerSaveDataModel.data.researchPoint += GetBaseRevenue();
         RPEarnTextEffect.Instantiate(gameObject, GetBaseRevenue());
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     // 심볼 초기화 작업
@@ -126,12 +111,10 @@ public class CalendarDailyView : UI_Base
         for (int i = 0; i < randImageCount;i++)
         {
             randIdx = Random.Range(0, PlayerSaveDataModel.data.ownedSymbols.Count);
-            symbolData = CSVDataContainer_SymbolData.GetSymbolData(PlayerSaveDataModel.data.ownedSymbols[randIdx]);
-            icon.sprite = ResourcesCache.symbolSprites[PlayerSaveDataModel.data.ownedSymbols[randIdx]];
+            symbolData = CSVDataContainer_SymbolData.GetSymbolData(randIdx);
+            icon.sprite = ResourcesCache.symbolSprites[randIdx];
             backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
 
-            yield return null;
-            yield return null;
             yield return null;
         }
 

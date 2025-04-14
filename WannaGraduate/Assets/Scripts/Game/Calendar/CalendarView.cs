@@ -9,8 +9,6 @@ public class CalendarView : UI_Base
     public static CalendarView Instance;
     [UIAutoAttachField] public List<CalendarDailyView> dayObjects;
 
-    
-
 
     // Ä¶¸°´õ ÃÊ±âÈ­
     public void ClearCalendar()
@@ -27,16 +25,6 @@ public class CalendarView : UI_Base
         ClearCalendar();
         StartCoroutine(RollCalendarDirection());
     }
-
-
-
-
-
-
-
-
-
-
 
     // ±âº» ¼öÀÍ È¹µæ
     private void EarnBaseRevenue()
@@ -82,15 +70,6 @@ public class CalendarView : UI_Base
         }
     }
 
-
-
-
-
-
-
-
-
-
     int oneDaySpecialEffectEnd = 0;
     private void BindEvents()
     {
@@ -104,7 +83,6 @@ public class CalendarView : UI_Base
             }
         });
     }
-
 
     private void Awake()
     {

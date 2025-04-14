@@ -13,123 +13,243 @@ MonoBehaviour:
   m_Name: SymbolData
   m_EditorClassIdentifier: 
   m_Items:
-  - ItemId: 0
+  - Id: 0
+    Name: "\uCF54\uB4DC"
     Rarity: 0
     BaseRevenue: 1
-  - ItemId: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 1
+    Name: "\uCC45\uB354\uBBF8"
     Rarity: 0
     BaseRevenue: 1
-  - ItemId: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 2
+    Name: "\uBC84\uADF8"
     Rarity: 0
     BaseRevenue: 1
-  - ItemId: 3
+    EffectArea: 0
+    Remain: -1
+  - Id: 3
+    Name: "\uCEE4\uD53C"
     Rarity: 0
     BaseRevenue: 1
-  - ItemId: 4
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 5
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 6
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 7
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 8
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 9
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 10
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 11
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 12
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 13
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 14
-    Rarity: 0
-    BaseRevenue: 1
-  - ItemId: 15
+    EffectArea: 0
+    Remain: -1
+  - Id: 4
+    Name: AI
     Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 16
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 5
+    Name: "\uCDA9\uB3CC"
     Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 17
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 18
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 19
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 20
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 21
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 22
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 23
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 24
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 25
-    Rarity: 1
-    BaseRevenue: 3
-  - ItemId: 26
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 6
+    Name: "\uC9C8\uBB38"
     Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 27
+    BaseRevenue: 3
+    EffectArea: 0
+    Remain: -1
+  - Id: 7
+    Name: Symbol_Test8
+    Rarity: 0
+    BaseRevenue: 0
+    EffectArea: 0
+    Remain: 3
+  - Id: 8
+    Name: Symbol_Test9
+    Rarity: 0
+    BaseRevenue: 0
+    EffectArea: 0
+    Remain: 4
+  - Id: 9
+    Name: Symbol_Test10
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: 5
+  - Id: 10
+    Name: "\uD68C\uB85C\uB3C4"
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 11
+    Name: "\uC2E4\uD5D8"
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 12
+    Name: "\uC7A5\uBE44"
+    Rarity: 0
+    BaseRevenue: 3
+    EffectArea: 0
+    Remain: -1
+  - Id: 13
+    Name: "\uAE30\uC5B4"
+    Rarity: 0
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: 1
+  - Id: 14
+    Name: "\uB80C\uC988"
+    Rarity: 1
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 15
+    Name: "\uC18C\uD654\uAE30"
+    Rarity: 1
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 16
+    Name: "\uC0AC\uACE0"
     Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 28
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 17
+    Name: Symbol_Test18
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 18
+    Name: Symbol_Test19
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 19
+    Name: Symbol_Test20
+    Rarity: 0
+    BaseRevenue: 3
+    EffectArea: 0
+    Remain: 2
+  - Id: 20
+    Name: "\uC138\uD3EC"
+    Rarity: 0
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 21
+    Name: "\uC950"
+    Rarity: 0
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 22
+    Name: DNA
+    Rarity: 1
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 23
+    Name: "\uD604\uBBF8\uACBD"
+    Rarity: 1
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 24
+    Name: "\uC57D\uBB3C"
+    Rarity: 1
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 25
+    Name: "\uB17C\uBB38"
     Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 29
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 30
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 31
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 32
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 33
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 34
-    Rarity: 2
-    BaseRevenue: 6
-  - ItemId: 35
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: 3
+  - Id: 26
+    Name: "\uC758\uB300\uC0DD"
     Rarity: 3
-    BaseRevenue: 12
-  - ItemId: 36
+    BaseRevenue: 3
+    EffectArea: 0
+    Remain: -1
+  - Id: 27
+    Name: Symbol_Test28
+    Rarity: 2
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 28
+    Name: Symbol_Test29
+    Rarity: 2
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 29
+    Name: Symbol_Test30
+    Rarity: 2
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 30
+    Name: "\uBC88\uC5ED"
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 31
+    Name: "\uAD7F\uC988"
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: 4
+  - Id: 32
+    Name: "\uD55C\uC790"
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 33
+    Name: "\uC0AC\uBB34\uB77C\uC774"
+    Rarity: 1
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 34
+    Name: "\uAC8C\uC784\uAE30"
+    Rarity: 1
+    BaseRevenue: 3
+    EffectArea: 0
+    Remain: -1
+  - Id: 35
+    Name: "\uC720\uD559\uC0DD"
+    Rarity: 1
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 36
+    Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
+    Rarity: 2
+    BaseRevenue: 2
+    EffectArea: 0
+    Remain: -1
+  - Id: 37
+    Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
     Rarity: 3
-    BaseRevenue: 12
-  - ItemId: 37
-    Rarity: 3
-    BaseRevenue: 12
-  - ItemId: 38
-    Rarity: 3
-    BaseRevenue: 12
-  - ItemId: 39
-    Rarity: 3
-    BaseRevenue: 12
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: 5
+  - Id: 38
+    Name: Symbol_Test39
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1
+  - Id: 39
+    Name: Symbol_Test40
+    Rarity: 0
+    BaseRevenue: 1
+    EffectArea: 0
+    Remain: -1

@@ -39,6 +39,7 @@ namespace DominoGames.DominoRx.DataModel
         public static void Load(ref T dataContainer)
         {
             dataContainer = SaveGame.Load<T>("data_" + dataContainer.GetType().FullName, dataContainer);
+            Debug.Log(dataContainer);
             dataContainer.InitializeData();
         }
     }

@@ -33,8 +33,13 @@ namespace BBB.CSVData
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
-        static void InitData()
+        public static void InitData()
         {
+            if(data != null)
+            {
+                return;
+            }
+
             data = Resources.Load<CSVDataContainer_SymbolData>("CSVData/SymbolData");
         }
     }

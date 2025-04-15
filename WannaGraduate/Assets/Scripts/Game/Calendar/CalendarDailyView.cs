@@ -1,4 +1,5 @@
 using BBB.CSVData;
+using DominoGames.Core.EventSystem;
 using DominoGames.RPG;
 using System;
 using System.Collections;
@@ -46,13 +47,24 @@ public class CalendarDailyView : UI_Base
 
     public int GetBaseRevenue()
     {
+        if(this.symbolId == -1)
+        {
+            return 0;
+        }
+
         return Mathf.RoundToInt(GetComponent<StatSystem>().GetBuffValue(EStatTypes.EarnRP) * StatSystem.globalStats["Player"].GetBuffValue(EStatTypes.EarnRP));
     }
 
     // ½Éº¼ÀÇ ±âº» ¼öÀÍ È¹µæ
     public void EarnBaseRevenue()
     {
+        if(this.symbolId == -1)
+        {
+            return;
+        }
+
         PlayerSaveDataModel.data.researchPoint += GetBaseRevenue();
+        GetComponent<ObjectScaleBouncer>().PlayEffect();
         RPEarnTextEffect.Instantiate(gameObject, GetBaseRevenue());
     }
 
@@ -62,6 +74,7 @@ public class CalendarDailyView : UI_Base
     {
         if (this.symbolId == -1)
         {
+            DominoEventSystem.Pub(EEventTypes.OnOneDaySpecialEffectEnd);
             return;
         }
 

@@ -3,12 +3,13 @@ using DominoGames.Core.EventSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CalendarView : UI_Base
 {
     public static CalendarView Instance;
+    [SerializeField] Button spinButton;
     [UIAutoAttachField] public List<CalendarDailyView> dayObjects;
-
 
     // Ä¶¸°´õ ÃÊ±âÈ­
     public void ClearCalendar()
@@ -29,7 +30,34 @@ public class CalendarView : UI_Base
     // ±âº» ¼öÀÍ È¹µæ
     private void EarnBaseRevenue()
     {
+        List<CalendarDailyView> revList = new(dayObjects);
+        revList.Sort((a, b) => (a.GetBaseRevenue() - b.GetBaseRevenue()));
+        StartCoroutine(EarnBaseRevenueCoroutine(revList));
+    }
+    IEnumerator EarnBaseRevenueCoroutine(List<CalendarDailyView> revList)
+    {
+        int startIndex = 0;
+        for(int i = 0; i < revList.Count; i++)
+        {
+            if (revList[i].GetBaseRevenue() == 0)
+            {
+                continue;
+            }
 
+            Debug.Log("called");
+
+            if(i == revList.Count - 1 || revList[i].GetBaseRevenue() != revList[i + 1].GetBaseRevenue())
+            {
+                for(int j = startIndex; j <= i; j++)
+                {
+                    revList[j].EarnBaseRevenue();
+                }
+
+                startIndex = i + 1;
+
+                yield return new WaitForSeconds(0.5f);
+            }
+        }
     }
 
     List<IEnumerator> specialEffectCoroutines = new();
@@ -75,11 +103,13 @@ public class CalendarView : UI_Base
     {
         DominoEventSystem.Sub(EEventTypes.OnOneDaySpecialEffectEnd, () =>
         {
+            Debug.Log(oneDaySpecialEffectEnd);
             oneDaySpecialEffectEnd++;
 
             if(oneDaySpecialEffectEnd >= 20)
             {
                 DominoEventSystem.Pub(EEventTypes.OnSpecialEffectEnd);
+                EarnBaseRevenue();
             }
         });
     }

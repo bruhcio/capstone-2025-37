@@ -12,11 +12,14 @@ public class RPEarnTextEffect : MonoBehaviour
     public void PlayEffect(int earnValue)
     {
         GetComponent<ObjectScaleBouncer>().PlayEffect();
-        transform.DOLocalMoveY(85f, 0.5f).SetEase(Ease.InQuad).SetDelay(0.5f);
-        GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InQuad);
-        text.text = "+" + earnValue.ToString("N0");
+        GetComponent<CanvasGroup>().alpha = 1;
+        transform.DOLocalMoveY(85f, 0.5f).SetEase(Ease.InQuad).SetDelay(0.15f);
+        GetComponent<CanvasGroup>().DOFade(0f, 0.5f).SetEase(Ease.InQuad).SetDelay(0.15f).OnComplete(() =>
+        {
+            ResourcesObjectPooler.Destroy(gameObject);
+        });
 
-        ResourcesObjectPooler.Destroy(gameObject);
+        text.text = "+" + earnValue.ToString("N0");
     }
 
 
@@ -26,6 +29,7 @@ public class RPEarnTextEffect : MonoBehaviour
         var effect = ResourcesObjectPooler.Instantiate("EarnRPTextEffect");
         effect.transform.SetParent(parent.transform);
         effect.transform.position = parent.transform.position;
+        effect.transform.localScale = Vector3.one;
         effect.GetComponentInParent<RPEarnTextEffect>().PlayEffect(earnValue);
     }
 }

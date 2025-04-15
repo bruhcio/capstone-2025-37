@@ -25,6 +25,8 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
         ownedItems.Clear();
         calenderSymbols.Clear();
 
+        CSVDataContainer_SymbolData.InitData();
+
         // 원형 심볼 데이터 추가
         foreach (var symbolData in CSVDataContainer_SymbolData.data.m_Items)
         {

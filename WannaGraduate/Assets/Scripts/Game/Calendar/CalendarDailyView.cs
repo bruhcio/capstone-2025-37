@@ -23,7 +23,7 @@ public class CalendarDailyView : UI_Base
     public void RollSymbol(int calendarId, Action onDailyDirectionEnd, Action<IEnumerator> bindSpecialEffect)
     {
         this.calendarId = calendarId;
-        this.symbolId = PlayerSaveDataModel.data.calenderSymbols[calendarId].Id;
+        this.symbolId = PlayerSaveDataModel.data.calenderSymbols[calendarId].Data.Id;
         this.onDailyDirectionEnd = onDailyDirectionEnd;
         this.bindSpecialEffect = bindSpecialEffect;
         InitSymbol();

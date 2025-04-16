@@ -53,6 +53,9 @@ namespace BBB.CSVData
         public int BaseRevenue;
         public SymbolEffectArea EffectArea = SymbolEffectArea.Center;
         public int Remain = -1; // 남은 횟수 (-1 = 제한 없음)
+
+        //public List<ITrigger> triggers = new List<ITrigger>();
+        //public List<ISpecialEffect> specialEffects = new List<ISpecialEffect>();
     }
 
 
@@ -83,6 +86,79 @@ namespace BBB.CSVData
 
         // 모든 칸
         All = Cell0 | Cell1 | Cell2 | Cell3 | Cell4 | Cell5 | Cell6 | Cell7 | Cell8
+    }
+
+    [Flags]
+    public enum AbsoluteSymbolEffectArea
+    {
+        None = 0,
+
+        // Row 0 (y = 0)
+        Cell00 = 1 << 0,   // 1
+        Cell01 = 1 << 1,   // 2
+        Cell02 = 1 << 2,   // 4
+        Cell03 = 1 << 3,   // 8
+        Cell04 = 1 << 4,   // 16
+
+        // Row 1 (y = 1)
+        Cell10 = 1 << 5,   // 32
+        Cell11 = 1 << 6,   // 64
+        Cell12 = 1 << 7,   // 128
+        Cell13 = 1 << 8,   // 256
+        Cell14 = 1 << 9,   // 512
+
+        // Row 2 (y = 2)
+        Cell20 = 1 << 10,  // 1024
+        Cell21 = 1 << 11,  // 2048
+        Cell22 = 1 << 12,  // 4096
+        Cell23 = 1 << 13,  // 8192
+        Cell24 = 1 << 14,  // 16384
+
+        // Row 3 (y = 3)
+        Cell30 = 1 << 15,  // 32768
+        Cell31 = 1 << 16,  // 65536
+        Cell32 = 1 << 17,  // 131072
+        Cell33 = 1 << 18,  // 262144
+        Cell34 = 1 << 19,  // 524288
+
+        // 전체 영역: 모든 셀을 포함
+        All = Cell00 | Cell01 | Cell02 | Cell03 | Cell04 |
+              Cell10 | Cell11 | Cell12 | Cell13 | Cell14 |
+              Cell20 | Cell21 | Cell22 | Cell23 | Cell24 |
+              Cell30 | Cell31 | Cell32 | Cell33 | Cell34
+    }
+
+
+    [Flags]
+    public enum RelativeSymbolEffectArea
+    {
+        None = 0,
+
+        // 3x3 기준 (현재 셀을 중심으로 주변)
+        Self = 1 << 0,  // 중심 셀
+        Top = 1 << 1,  // 바로 위
+        Bottom = 1 << 2,  // 바로 아래
+        Left = 1 << 3,  // 바로 왼쪽
+        Right = 1 << 4,  // 바로 오른쪽
+        TopLeft = 1 << 5,  // 왼쪽 위
+        TopRight = 1 << 6,  // 오른쪽 위
+        BottomLeft = 1 << 7,  // 왼쪽 아래
+        BottomRight = 1 << 8,  // 오른쪽 아래
+
+        // 3x3 전체
+        Surrounding3x3 = Self | Top | Bottom | Left | Right | TopLeft | TopRight | BottomLeft | BottomRight,
+
+        // X 모양
+        Diagonals = TopLeft | TopRight | BottomLeft | BottomRight,
+
+        // + 모양
+        NonDiagonals = Self | Top | Bottom | Left | Right,
+
+        // 상대 영역: 같은 행 전체 (자신 포함 혹은 제외할 것은 사용 시 결정)
+        SameRow = 1 << 9,
+
+        // 상대 영역: 같은 열 전체 (자신 포함 혹은 제외할 것은 사용 시 결정)
+        SameColumn = 1 << 10
     }
 }
 

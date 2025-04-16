@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static PlayerSaveDataModel;
 
 public class GameManager : MonoBehaviour
 {
@@ -108,8 +109,11 @@ public class GameManager : MonoBehaviour
         // shuffle list
         result = result.OrderBy(_ => Guid.NewGuid()).ToList();
 
-        // Clear and Randomize Calendar Symbol Data
-        PlayerSaveDataModel.data.calenderSymbols = result;
+        for (int y = 0; y < 4; y++) {
+            for (int x = 0; x < 5; x++) {
+                PlayerSaveDataModel.data.calenderSymbols.Add(new CalendarSymbol(result[y * 4 + x], new Vector2Int(y, x)));
+            }
+        }
     }
     #endregion
 }

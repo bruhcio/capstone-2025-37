@@ -26,10 +26,17 @@ namespace BBB.CSVData
         public CSVDataRow_SymbolData[] m_Items;
 
         public static CSVDataContainer_SymbolData data;
+        private static Dictionary<int, List<CSVDataRow_SymbolData>> itemsByRank = new();
 
         public static CSVDataRow_SymbolData GetSymbolData(int idx)
         {
             return data.m_Items[idx];
+        }
+
+        public static CSVDataRow_SymbolData GetRandomSymbolDataByRarity(int rarity)
+        {
+            int randIndex = UnityEngine.Random.Range(0, itemsByRank[rarity].Count);
+            return itemsByRank[rarity][randIndex];
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
@@ -41,6 +48,17 @@ namespace BBB.CSVData
             }
 
             data = Resources.Load<CSVDataContainer_SymbolData>("CSVData/SymbolData");
+
+            itemsByRank.Clear();
+            for(int i = 0; i < data.m_Items.Length; i++)
+            {
+                if (!itemsByRank.ContainsKey(data.m_Items[i].Rarity))
+                {
+                    itemsByRank.Add(data.m_Items[i].Rarity, new());
+                }
+
+                itemsByRank[data.m_Items[i].Rarity].Add(data.m_Items[i]);
+            }
         }
     }
 

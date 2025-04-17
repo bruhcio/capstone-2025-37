@@ -2139,7 +2139,7 @@ GameObject:
   - component: {fileID: 222170280}
   - component: {fileID: 222170282}
   m_Layer: 5
-  m_Name: SymbolPanel
+  m_Name: SymbolPanels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2889,7 +2889,7 @@ GameObject:
   - component: {fileID: 306984583}
   - component: {fileID: 306984582}
   m_Layer: 5
-  m_Name: SymbolPanel (2)
+  m_Name: SymbolPanels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3418,7 +3418,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 615514303}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -3437,7 +3438,19 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: AddSymbol_Popup
+    - Name: $v
+      Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -3764,7 +3777,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8aa072c73a411c45b56cd16ccee70cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84d3001b3aef5d44e92aabbf131f7ce5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4767,7 +4780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8aa072c73a411c45b56cd16ccee70cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4db3e24bb68b7554fa057481c1607976, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4929,6 +4942,10 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
+  symbolPanels:
+  - {fileID: 222170282}
+  - {fileID: 1954639030}
+  - {fileID: 306984582}
 --- !u!225 &615514304
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -10769,7 +10786,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8aa072c73a411c45b56cd16ccee70cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 640b3f07aa083a44f8d66bd3ae8c31d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13473,7 +13490,7 @@ GameObject:
   - component: {fileID: 1954639031}
   - component: {fileID: 1954639030}
   m_Layer: 5
-  m_Name: SymbolPanel (1)
+  m_Name: SymbolPanels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -6,6 +6,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 using static PlayerSaveDataModel;
 
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
     // 턴 종료 시점 아이템 효과 (예: 후 효과 실행)
     public void OnTurnEnd()
     {
+
     }
 
     #endregion
@@ -107,7 +109,10 @@ public class GameManager : MonoBehaviour
         }
 
         // shuffle list
-        result = result.OrderBy(_ => Guid.NewGuid()).ToList();
+        System.Random rand = new();
+        result = result.OrderBy(_ => rand.Next()).ToList();
+
+        PlayerSaveDataModel.data.calenderSymbols.Clear();
 
         for (int y = 0; y < 4; y++) {
             for (int x = 0; x < 5; x++) {

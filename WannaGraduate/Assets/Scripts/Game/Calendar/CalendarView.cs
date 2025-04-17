@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using VInspector.Libs;
 
 public class CalendarView : UI_Base
 {
@@ -44,8 +45,6 @@ public class CalendarView : UI_Base
                 continue;
             }
 
-            Debug.Log("called");
-
             if(i == revList.Count - 1 || revList[i].GetBaseRevenue() != revList[i + 1].GetBaseRevenue())
             {
                 for(int j = startIndex; j <= i; j++)
@@ -58,6 +57,8 @@ public class CalendarView : UI_Base
                 yield return new WaitForSeconds(0.5f);
             }
         }
+
+
     }
 
     List<IEnumerator> specialEffectCoroutines = new();
@@ -66,7 +67,7 @@ public class CalendarView : UI_Base
     {
         for(int i = 0; i < specialEffectCoroutines.Count; i++)
         {
-            yield return specialEffectCoroutines[i];
+            yield return specialEffectCoroutines[i]; // 특수 효과 구현
         }
     }
 
@@ -103,7 +104,6 @@ public class CalendarView : UI_Base
     {
         DominoEventSystem.Sub(EEventTypes.OnOneDaySpecialEffectEnd, () =>
         {
-            Debug.Log(oneDaySpecialEffectEnd);
             oneDaySpecialEffectEnd++;
 
             if(oneDaySpecialEffectEnd >= 20)

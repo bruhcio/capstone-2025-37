@@ -17,6 +17,6 @@ public class SpinCountUIText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = PlayerSaveDataModel.data.spinCount.ToString();
+        text.text = "<size=80%>다음 실적 평가까지</size>  " + PlayerSaveDataModel.data.spinCount.ToString() + "개월";
     }
 }

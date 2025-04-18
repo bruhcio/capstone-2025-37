@@ -12,20 +12,27 @@ public class SymbolSelectPanel : UI_Base
     [UIAutoAttachField, SerializeField] Image iconImage;
     [UIAutoAttachField, SerializeField] TMP_Text nameText, baseRpText, specialEffectText;
 
+    List<Color> panelColors = new() { Color.white, new(0.5f, 1f, 0f, 1f), new(0f, 1f, 1f, 1f), new(1f, 0.75f, 0f, 1f) };
+
     int symbolId;
 
     public void UpdateUI(int targetSymbolId)
     {
+        var symbolData = CSVDataContainer_SymbolData.GetSymbolData(targetSymbolId);
+
         symbolId = targetSymbolId;
         iconImage.sprite = Resources.Load<Sprite>("Sprites/Symbols/" + targetSymbolId);
-        nameText.text = LocalizationManager.GetTermTranslation("SymbolName." + targetSymbolId);
-        baseRpText.text = CSVDataContainer_SymbolData.GetSymbolData(targetSymbolId).BaseRevenue.ToString();
+        nameText.text = LocalizationManager.GetTermTranslation("Rarity." + symbolData.Rarity) + " " + LocalizationManager.GetTermTranslation("SymbolName." + targetSymbolId);
+        baseRpText.text = symbolData.BaseRevenue.ToString();
         specialEffectText.text = LocalizationManager.GetTermTranslation("SymbolEffect." + targetSymbolId);
+
+        GetComponent<Image>().color = panelColors[symbolData.Rarity];
     }
 
     public void OnClick()
     {
         // 심볼을 Owned Symbol에 추가
         PlayerSaveDataModel.data.ownedSymbols.Add(CSVDataContainer_SymbolData.GetSymbolData(symbolId));
+        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide();
     }
 }

@@ -4,6 +4,7 @@ using DominoGames.RPG;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -105,7 +106,7 @@ public class CalendarDailyView : UI_Base
         }
 
         var symbolData = CSVDataContainer_SymbolData.GetSymbolData(symbolId);
-        icon.sprite = ResourcesCache.symbolSprites[symbolId];
+        icon.sprite = ResourcesCache.symbolSprites[Mathf.Min(symbolId, ResourcesCache.symbolSprites.Length)];
         backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
     }
     private void UpdateView()
@@ -125,7 +126,7 @@ public class CalendarDailyView : UI_Base
         {
             randIdx = Random.Range(0, PlayerSaveDataModel.data.ownedSymbols.Count);
             symbolData = CSVDataContainer_SymbolData.GetSymbolData(randIdx);
-            icon.sprite = ResourcesCache.symbolSprites[randIdx];
+            icon.sprite = ResourcesCache.symbolSprites[Mathf.Min(randIdx, ResourcesCache.symbolSprites.Length)];
             backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
 
             yield return null;

@@ -33,6 +33,538 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
+    - Term: SymbolName.0
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCF54\uB4DC"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.0
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC5C6\uC74C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.1
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCC45\uB354\uBBF8"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.1
+      TermType: 0
+      Description: 
+      Languages:
+      - "3\uD134 \uD6C4\uC5D0 \uD30C\uAD34\uB428\n\uD30C\uAD34 \uB420 \uB54C <color=#00FFFF>5
+        \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.2
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC84\uADF8"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.2
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD30C\uAD34\uB418\uBA74 <color=#00FFFF>8 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color>
+        \uD68D\uB4DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.3
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCEE4\uD53C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.3
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.4
+      TermType: 0
+      Description: 
+      Languages:
+      - AI
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.4
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC8FC\uBCC0 1\uCE78\uC5D0 \uCF54\uB4DC\uAC00 \uC788\uC73C\uBA74\n\uCF54\uB4DC
+        1\uAC1C\uB2F9 <color=#00FFFF>2 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.5
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCDA9\uB3CC"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.5
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC8FC\uC704 1\uCE78\uC758 \uCF54\uB4DC\uAC00 \uB3D9\uC791\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.\n\uD30C\uAD34\uD558\uBA74
+        <color=#00FFFF>2 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.6
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC9C8\uBB38"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.6
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.7
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.8
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.8
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.9
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.9
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.10
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD68C\uB85C\uB3C4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.10
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.11
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC2E4\uD5D8"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.11
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.12
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC7A5\uBE44"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.12
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.13
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uC5B4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.13
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.14
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB80C\uC988"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.14
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.15
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC18C\uD654\uAE30"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.15
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.16
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0AC\uACE0"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.16
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.17
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.17
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.18
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.18
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.19
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.19
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.20
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.20
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.21
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.21
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.22
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.22
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.23
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.23
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.24
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.24
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.25
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.25
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.26
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.26
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.27
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.27
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.28
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.28
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.29
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.29
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.
+      TermType: 0
+      Description: 
+      Languages:
+      - 
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Rarity.0
+      TermType: 0
+      Description: 
+      Languages:
+      - "[\uC77C\uBC18]"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Rarity.1
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green>[\uACE0\uAE09]</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Rarity.2
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF>[\uD76C\uADC0]</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: Rarity.3
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=orange>[\uC804\uC124]</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
     CaseInsensitiveTerms: 0
     OnMissingTranslation: 1
     mTerm_AppName: 
@@ -48,7 +580,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw79-Z8c3g-2IA_vQY_yt6jKtCOwahV6uvHjIwzCc9w_DvOIyfBmH_RIsNXgbhkTFvX/exec
     Google_SpreadsheetKey: 1bFkHzzyKTUl6Q5aeIRYgWFCbpiKTDneGCl7vMHBoM-k
     Google_SpreadsheetName: I2Loc WannaGraduate Localization
-    Google_LastUpdatedVersion: 1744459029938
+    Google_LastUpdatedVersion: 1744915497714
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

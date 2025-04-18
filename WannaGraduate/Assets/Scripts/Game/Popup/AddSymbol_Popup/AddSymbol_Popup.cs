@@ -26,4 +26,9 @@ public class AddSymbol_Popup : PopupBase
             symbolPanels[i].UpdateUI(targetSymbol.Id);
         }
     }
+
+    public void SkipSelection()
+    {
+        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide();
+    }
 }

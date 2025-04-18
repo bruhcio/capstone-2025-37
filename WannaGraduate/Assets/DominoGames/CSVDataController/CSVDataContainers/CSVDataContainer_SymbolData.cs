@@ -26,11 +26,12 @@ namespace BBB.CSVData
         public CSVDataRow_SymbolData[] m_Items;
 
         public static CSVDataContainer_SymbolData data;
+        private static Dictionary<int, CSVDataRow_SymbolData> itemsById = new();
         private static Dictionary<int, List<CSVDataRow_SymbolData>> itemsByRank = new();
 
         public static CSVDataRow_SymbolData GetSymbolData(int idx)
         {
-            return data.m_Items[idx];
+            return itemsById[idx];
         }
 
         public static CSVDataRow_SymbolData GetRandomSymbolDataByRarity(int rarity)
@@ -58,6 +59,7 @@ namespace BBB.CSVData
                 }
 
                 itemsByRank[data.m_Items[i].Rarity].Add(data.m_Items[i]);
+                itemsById.Add(data.m_Items[i].Id, data.m_Items[i]);
             }
         }
     }

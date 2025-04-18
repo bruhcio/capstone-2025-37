@@ -22,6 +22,7 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
         }
     }
 
+    public int researchMinusIndex = 0; // 연구 실적 평가 차수 (n차 연구 실적 평가)
     public int spinCount = 6;       // 연구 실적 평가까지 남은 개월 수 (남은 spin 횟수)
     public int researchPoint = 0;   // 연구 포인트
 

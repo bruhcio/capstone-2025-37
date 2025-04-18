@@ -5,12 +5,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using VInspector.Libs;
+using DominoGames.UI.PopupSystem;
+using DominoGames.RPG;
 
 public class CalendarView : UI_Base
 {
     public static CalendarView Instance;
     [SerializeField] Button spinButton;
     [UIAutoAttachField] public List<CalendarDailyView> dayObjects;
+
+
+    // ∆Ø¡§ ƒ∂∏∞¥ı¿« StatSystem π›»Ø
+    public StatSystem GetStatSystem(int calendarIndex)
+    {
+        return dayObjects[calendarIndex].GetComponent<StatSystem>();
+    }
+
+
 
     // ƒ∂∏∞¥ı √ ±‚»≠
     public void ClearCalendar()
@@ -24,6 +35,8 @@ public class CalendarView : UI_Base
     // ¿œ¡§ ∞Ë»π Ω∫«…
     public void RollCalendar()
     {
+        PlayerSaveDataModel.data.spinCount--;
+        spinButton.interactable = false;
         ClearCalendar();
         StartCoroutine(RollCalendarDirection());
     }
@@ -42,23 +55,37 @@ public class CalendarView : UI_Base
         {
             if (revList[i].GetBaseRevenue() == 0)
             {
+                startIndex = i + 1;
                 continue;
             }
 
-            if(i == revList.Count - 1 || revList[i].GetBaseRevenue() != revList[i + 1].GetBaseRevenue())
+            if(startIndex != i)
             {
-                for(int j = startIndex; j <= i; j++)
+                if (i == revList.Count - 1 || revList[i].GetBaseRevenue() != revList[i + 1].GetBaseRevenue())
                 {
-                    revList[j].EarnBaseRevenue();
+                    for (int j = startIndex; j <= i; j++)
+                    {
+                        revList[j].EarnBaseRevenue();
+                    }
+
+                    startIndex = i + 1;
+
+                    yield return new WaitForSeconds(0.5f);
                 }
-
-                startIndex = i + 1;
-
-                yield return new WaitForSeconds(0.5f);
             }
         }
 
 
+        spinButton.interactable = true;
+
+        if (PlayerSaveDataModel.data.spinCount <= 0)
+        {
+            PopupSystem.GameSceneJYS.ResearchResult_Popup.Show(null);
+        }
+        else
+        {
+            PopupSystem.GameSceneJYS.AddSymbol_Popup.Show(null);
+        }
     }
 
     List<IEnumerator> specialEffectCoroutines = new();
@@ -118,6 +145,9 @@ public class CalendarView : UI_Base
     {
         Instance = this;
         BindEvents();
+
+        ClearCalendar();
+        spinButton.interactable = true;
     }
 
 }

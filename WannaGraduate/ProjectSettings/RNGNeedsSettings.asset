@@ -165,7 +165,30 @@ MonoBehaviour:
     ShowInfluenceToggle: 0
     ShowSpreadOnBars: 0
     SpreadPercentageDigits: 2
-  DrawerSettings: []
+  DrawerSettings:
+  - DrawerID: 402757aa-4b2b-4773-8e06-521dc8f904fa
+    Created: 638805419375162586
+    Modified: 638805749920587333
+    DrawerOptionSection: 0
+    PalettePath: Default
+    DimColors: 1
+    Monochrome: 0
+    MonochromeColor: {r: 1, g: 0.78, b: 0.4, a: 1}
+    ShowIndex: 0
+    ShowInfo: 1
+    ShowPercentage: 1
+    StripeHeight: 2
+    StripePercentageDigits: 0
+    ItemPercentageDigits: 2
+    TestPercentageDigits: 2
+    ColorizePreviewBars: 1
+    NormalizePreviewBars: 0
+    TestColorizeSensitivity: 3
+    SpreadColorizeSensitivity: 2
+    ElementInfoSpace: 0.5
+    ShowInfluenceToggle: 0
+    ShowSpreadOnBars: 0
+    SpreadPercentageDigits: 2
   colorPalettes:
   - palettePath: Default
     colors:

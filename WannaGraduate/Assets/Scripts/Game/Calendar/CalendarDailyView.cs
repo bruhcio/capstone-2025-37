@@ -106,7 +106,7 @@ public class CalendarDailyView : UI_Base
         }
 
         var symbolData = CSVDataContainer_SymbolData.GetSymbolData(symbolId);
-        icon.sprite = ResourcesCache.symbolSprites[Mathf.Min(symbolId, ResourcesCache.symbolSprites.Length)];
+        icon.sprite = ResourcesCache.GetSymbolSprite(symbolId);
         backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
     }
     private void UpdateView()
@@ -125,8 +125,8 @@ public class CalendarDailyView : UI_Base
         for (int i = 0; i < randImageCount;i++)
         {
             randIdx = Random.Range(0, PlayerSaveDataModel.data.ownedSymbols.Count);
-            symbolData = CSVDataContainer_SymbolData.GetSymbolData(randIdx);
-            icon.sprite = ResourcesCache.symbolSprites[Mathf.Min(randIdx, ResourcesCache.symbolSprites.Length)];
+            symbolData = PlayerSaveDataModel.data.ownedSymbols[randIdx];
+            icon.sprite = ResourcesCache.GetSymbolSprite(symbolData.Id);
             backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
 
             yield return null;

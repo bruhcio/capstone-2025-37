@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourcesCache : MonoBehaviour
 {
-    public static Dictionary<int, Sprite> symbolSprites;
+    public static Dictionary<int, Sprite> symbolSprites = new();
     public static Sprite[] symbolBackgroundSprites;
 
 

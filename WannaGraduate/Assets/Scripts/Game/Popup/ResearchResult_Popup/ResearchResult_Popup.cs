@@ -58,5 +58,8 @@ public class ResearchResult_Popup : PopupBase
         {
             PopupSystem.GameSceneJYS.AddSymbol_Popup.Show(null);
         }
+
+        PlayerSaveDataModel.data.spinCount = 6;
+        PlayerSaveDataModel.data.researchMinusIndex++;
     }
 }

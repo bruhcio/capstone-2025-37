@@ -95,7 +95,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "3\uD134 \uD6C4\uC5D0 \uD30C\uAD34\uB428"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -580,7 +580,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw79-Z8c3g-2IA_vQY_yt6jKtCOwahV6uvHjIwzCc9w_DvOIyfBmH_RIsNXgbhkTFvX/exec
     Google_SpreadsheetKey: 1bFkHzzyKTUl6Q5aeIRYgWFCbpiKTDneGCl7vMHBoM-k
     Google_SpreadsheetName: I2Loc WannaGraduate Localization
-    Google_LastUpdatedVersion: 1744915497714
+    Google_LastUpdatedVersion: 1744915758809
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

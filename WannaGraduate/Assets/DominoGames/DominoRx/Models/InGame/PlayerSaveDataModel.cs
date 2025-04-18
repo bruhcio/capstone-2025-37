@@ -31,6 +31,9 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
     public List<int> ownedItems = new();                                    // 소유 아이템
     public List<CalendarSymbol> calenderSymbols = new();             // 캘린더 내 심볼
 
+
+    public int dialogueIndex = 0;   // 대화 인덱스
+
     public void InitializeData()
     {
         CSVDataContainer_SymbolData.InitData();

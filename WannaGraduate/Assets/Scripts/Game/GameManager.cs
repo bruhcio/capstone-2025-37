@@ -1,4 +1,5 @@
 using BBB.CSVData;
+using DominoGames.Core.EventSystem;
 using DominoGames.RPG;
 using RNGNeeds;
 using Sirenix.OdinInspector;
@@ -119,6 +120,29 @@ public class GameManager : MonoBehaviour
                 PlayerSaveDataModel.data.calenderSymbols.Add(new CalendarSymbol(result[y * 4 + x], new Vector2Int(y, x)));
             }
         }
+    }
+
+
+    private void Awake()
+    {
+        BindDialogues();
+    }
+
+
+
+    // 대화 설정
+    private void BindDialogues()
+    {
+        DialogueSystem.Instance.StartDialogue("Start");
+
+        DominoEventSystem.Sub(EEventTypes.OnEarnBaseRevenueEnd, () =>
+        {
+            if (PlayerSaveDataModel.data.dialogueIndex == 0)
+            {
+                DialogueSystem.Instance.StartDialogue("AfterSpin");
+                PlayerSaveDataModel.data.dialogueIndex++;
+            }
+        });
     }
     #endregion
 }

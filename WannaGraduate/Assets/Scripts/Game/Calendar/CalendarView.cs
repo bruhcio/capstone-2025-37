@@ -50,6 +50,7 @@ public class CalendarView : UI_Base
     }
     IEnumerator EarnBaseRevenueCoroutine(List<CalendarDailyView> revList)
     {
+        DominoEventSystem.Pub(EEventTypes.OnEarnBaseRevenueStart);
         int startIndex = 0;
         for(int i = 0; i < revList.Count; i++)
         {
@@ -75,7 +76,6 @@ public class CalendarView : UI_Base
             }
         }
 
-
         spinButton.interactable = true;
 
         if (PlayerSaveDataModel.data.spinCount <= 0)
@@ -86,6 +86,8 @@ public class CalendarView : UI_Base
         {
             PopupSystem.GameSceneJYS.AddSymbol_Popup.Show(null);
         }
+
+        DominoEventSystem.Pub(EEventTypes.OnEarnBaseRevenueEnd);
     }
 
     List<IEnumerator> specialEffectCoroutines = new();

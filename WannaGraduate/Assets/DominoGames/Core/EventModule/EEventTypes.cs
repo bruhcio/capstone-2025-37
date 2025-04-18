@@ -15,5 +15,7 @@ namespace DominoGames.Core.EventSystem
 
         OnEarnBaseRevenueStart,
         OnEarnBaseRevenueEnd,
+
+        OnSymbolSelectEnd,
     }
 }

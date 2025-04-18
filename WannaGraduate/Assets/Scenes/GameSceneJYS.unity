@@ -5167,6 +5167,7 @@ MonoBehaviour:
   - {fileID: 222170282}
   - {fileID: 1954639030}
   - {fileID: 306984582}
+  leftMonthText: {fileID: 1226461338}
 --- !u!225 &615514304
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6510,7 +6511,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 816230393}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 615514303}
+        m_TargetAssemblyTypeName: AddSymbol_Popup, Assembly-CSharp
+        m_MethodName: SkipSelection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &816230393
 MonoBehaviour:
   m_ObjectHideFlags: 0

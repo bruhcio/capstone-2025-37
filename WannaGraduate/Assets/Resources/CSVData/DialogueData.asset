@@ -60,7 +60,130 @@ MonoBehaviour:
   - DialogueId: AfterSpin
     CharacterId: Racoon
     Index: 2
-    Korean: "\uD559\uC704\uB97C \uBC1B\uAE30 \uC704\uD574\uC11C\uB294 <color=#00FFFF>12\uBC88\uC758
+    Korean: "\uD559\uC704\uB97C \uBC1B\uAE30 \uC704\uD574\uC11C\uB294 <color=#00FFFF>10\uBC88\uC758
       \uC5F0\uAD6C \uC2E4\uC801 \uD3C9\uAC00</color>\uB4E4\uC744 \uD1B5\uACFC\uD574\uC57C
       \uD55C\uB2E4\uB124\n\uC790\uB124\uC758 \uBB34\uC6B4\uC744 \uBE4C\uACA0\uB124"
+    English: 
+  - DialogueId: 
+    CharacterId: 
+    Index: 0
+    Korean: 
+    English: 
+  - DialogueId: AfterResult.0
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uB2F9\uC5F0\uD788 \uAC01\uC624\uD588\uC744\uAC70\uB77C \uC0DD\uAC01\uD558\uC9C0\uB9CC
+      \uC5F0\uAD6C\uB97C \uC5B4\uB290\uC815\uB3C4 \uD588\uB294\uC9C0 \uBCF4\uC5EC\uC8FC\uAC8C"
+    English: 
+  - DialogueId: AfterResult.0
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uB2E4\uC74C\uC8FC\uBD80\uD130\uB294 50\uC810\uC77C\uC138"
+    English: 
+  - DialogueId: AfterResult.1
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uCCAB \uC8FC\uCC28\uC758 \uC790\uC728\uC5F0\uAD6C\uB294 \uB9C8\uCE58
+      \uC720\uD29C\uBE0C\uC5D0\uC11C \uBCF4\uACE0 \uB530\uB77C\uD55C \uC5F0\uAD6C
+      \uAC19\uC558\uB124! \uC774\uBC88\uC8FC\uB294 \uB354 \uC798\uD560\uAC70\uB77C\uACE0
+      \uBBFF\uB124"
+    English: 
+  - DialogueId: AfterResult.1
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uC544 \uADF8\uB9AC\uACE0 \uB2E4\uC74C\uC8FC\uBD80\uD130 75\uC810\uC77C\uC138"
+    English: 
+  - DialogueId: AfterResult.2
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC774\uBC88 \uC8FC\uCC28 \uC5F0\uAD6C\uB294 \uC870\uAE08 \uD798\uB4E4\uC5C8\uACA0\uAD70,
+      \uC5F0\uAD6C \uACB0\uACFC\uB97C \uAC00\uC838\uC624\uAC8C"
+    English: 
+  - DialogueId: 
+    CharacterId: 
+    Index: 0
+    Korean: 
+    English: 
+  - DialogueId: AfterResult.3
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC800\uBC88\uC8FC\uC5D0 \uC790\uB124 \uCC45\uC0C1\uC5D0\uC11C \uC774\uC0C1\uD55C
+      \uD3EC\uC2A4\uD2B8\uC787\uC744 \uBD24\uB2E4\uB124."
+    English: 
+  - DialogueId: AfterResult.3
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uD0C8\uC8FC\uBC94\uB4E4\uC758 \uC751\uC6D0\uC774\uB77C\uB2C8 \uB9D0\uB3C4
+      \uC548\uB418\uC9C0. \uB2E4\uC2DC \uD68C\uC218\uD558\uB3C4\uB85D \uD558\uACA0\uB124"
+    English: 
+  - DialogueId: AfterResult.4
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC5F0\uAD6C\uB97C \uC2DC\uC791\uD558\uBA74 \uC5B8\uC81C\uB098 \uC608\uC0C1\uCE58
+      \uBABB\uD55C \uC77C\uC774 \uC77C\uC5B4\uB098\uC9C0."
+    English: 
+  - DialogueId: AfterResult.4
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uC774\uBC88\uC8FC\uB294 \uC608\uC0C1\uD558\uC9C0 \uBABB\uD55C \uC694\uC18C\uB97C
+      \uC0C1\uC815\uD558\uACE0 \uD574\uBCF4\uAC8C"
+    English: 
+  - DialogueId: AfterResult.5
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC774\uC81C \uC5B4\uB290 \uC815\uB3C4 \uC5F0\uAD6C\uC2E4\uC774 \uC5B4\uB5BB\uAC8C
+      \uB3CC\uC544\uAC00\uB294\uC9C0 \uC54C\uC558\uACA0\uC9C0?"
+    English: 
+  - DialogueId: AfterResult.5
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uC800\uBC88\uC8FC\uCE58\uBD80\uD130 \uC2DD\uBE44\uB294 \uC54C\uC544\uC11C
+      \uD558\uAC8C"
+    English: 
+  - DialogueId: AfterResult.6
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC2DD\uBE44\uB294 \uC5BC\uB9C8\uB098 \uB098\uC624\uB098? \uC775\uC219\uD574\uC84C\uC744\uAC70\uB77C\uACE0
+      \uBBFF\uB124. \uC774\uBC88\uC8FC\uBD80\uD130\uB294 \uC5F0\uAD6C\uC5D0 \uD1B5\uC81C
+      \uBCC0\uC778\uC744 \uCD94\uAC00\uD574\uBCF4\uAC8C"
+    English: 
+  - DialogueId: AfterResult.6
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uC544 \uADF8\uB9AC\uACE0 \uD658\uC728\uC774 \uC62C\uB77C\uBC84\uB824\uC11C
+      \uB2E4\uC74C\uC8FC\uBD80\uD130\uB294 \uC5F0\uAD6C\uBE44\uAC00 \uC62C\uB77C\uAC08\uB4EF\uD55C\uB370\u2026.
+      \uADF8\uB798\uB3C4 \uC5F0\uAD6C\uB97C \uC798 \uD560\uAC70\uB77C\uACE0 \uBBFF\uB124"
+    English: 
+  - DialogueId: AfterResult.7
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC774\uC81C \uC790\uB124\uB3C4 \uC2AC\uC2AC \uC8FC\uBCC0 \uC2E4\uD5D8\uC2E4\uACFC
+      \uBE44\uAD50\uB2F9\uD558\uAE30 \uC2DC\uC791\uD560 \uAC78\uC138."
+    English: 
+  - DialogueId: AfterResult.7
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uB0A8\uB4E4\uC740 \uB17C\uBB38 \uCD08\uC548 \uD558\uB098\uCBE4\uC740
+      \uC37C\uB2E4\uACE0 \uD558\uB358\uB370\u2026 \uC790\uB124\uB294 \uC544\uC9C1
+      \uC2E4\uD5D8 \uBC18\uBCF5 \uC911\uC778\uAC00?? \uC2AC\uC2AC \uC804\uACF5\uC744
+      \uC815\uD558\uAC8C. \uC5B4\uD734"
+    English: 
+  - DialogueId: AfterResult.8
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uB2E4\uC74C\uC8FC\uBD80\uD130\uB294 \uAD6D\uAC00\uC801\uC778 \uC5F0\uAD6C
+      \uC0AD\uAC10\uC73C\uB85C \uC778\uD574\uC11C \uC790\uB124\uAC00 \uB354\uC6B1
+      \uB354 \uC5F4\uC2EC\uD788 \uD574\uC57C\uD560 \uAC83 \uAC19\uB124."
+    English: 
+  - DialogueId: AfterResult.8
+    CharacterId: Racoon
+    Index: 1
+    Korean: "\uADF8\u2026. \uC2DC\uAC04\uC744 \uC870\uAE08 \uB354 \uC368\uBCF4\uAC8C?
+      \u314E"
+    English: 
+  - DialogueId: AfterResult.9
+    CharacterId: Racoon
+    Index: 0
+    Korean: "\uC774\uC81C \uC790\uB124\uB3C4 \uC5B4\uB290 \uC815\uB3C4 \uC644\uC219\uD55C
+      \uC5F0\uAD6C\uC6D0\uC774\uACA0\uC9C0, \uD55C \uBC88 \uC131\uACFC\uB97C \uBCF4\uC5EC\uC8FC\uAC8C"
     English: 

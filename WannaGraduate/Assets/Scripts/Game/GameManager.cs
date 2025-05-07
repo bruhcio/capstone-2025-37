@@ -143,6 +143,15 @@ public class GameManager : MonoBehaviour
                 PlayerSaveDataModel.data.dialogueIndex++;
             }
         });
+
+        DominoEventSystem.Sub(EEventTypes.OnSymbolSelectEnd, () =>
+        {
+            if(PlayerSaveDataModel.data.researchPoint >= 0)
+            {
+                DialogueSystem.Instance.StartDialogue("AfterResult." + PlayerSaveDataModel.data.researchMinusIndex);
+                PlayerSaveDataModel.data.dialogueIndex++;
+            }
+        });
     }
     #endregion
 }

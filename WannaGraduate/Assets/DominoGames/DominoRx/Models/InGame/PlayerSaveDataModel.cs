@@ -32,6 +32,8 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
     public List<CalendarSymbol> calenderSymbols = new();             // 캘린더 내 심볼
 
 
+    public string playerName = "";
+
     public int dialogueIndex = 0;   // 대화 인덱스
 
     public void InitializeData()

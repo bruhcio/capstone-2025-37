@@ -45,7 +45,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC5C6\uC74C"
+      - "<symbol=4> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=0>
+        1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=48> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC 10% \uD655\uB960\uB85C <symbol=10000> +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -53,7 +55,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uCC45\uB354\uBBF8"
+      - "\uBC84\uADF8"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -61,8 +63,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "3\uD134 \uD6C4\uC5D0 \uD30C\uAD34\uB428\n\uD30C\uAD34 \uB420 \uB54C <color=#00FFFF>5
-        \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - "<symbol=2> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=2>
+        \uD30C\uAD34, 1\uAC1C\uB2F9 <symbol=10000> +5"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -70,7 +72,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uBC84\uADF8"
+      - "\uCEE4\uD53C"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -78,8 +80,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uD30C\uAD34\uB418\uBA74 <color=#00FFFF>8 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color>
-        \uD68D\uB4DD"
+      - "3\uD134 \uD6C4 \uD30C\uAD34\uB428  \r\n<symbol=25> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=25> 1\uAC1C\uB2F9 <symbol=10000>
+        +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -87,7 +90,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uCEE4\uD53C"
+      - "\uCDA9\uB3CC"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -95,7 +98,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "3\uD134 \uD6C4\uC5D0 \uD30C\uAD34\uB428"
+      - "<symbol=0> \uC778\uC811 \uC2DC \uC791\uB3D9 \uBD88\uAC00\n<symbol=VPN> \uC874\uC7AC
+        \uC2DC \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\n\uD30C\uAD34 \uC2DC <color=#00FFFF><symbol=10000>
+        +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -111,8 +116,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC8FC\uBCC0 1\uCE78\uC5D0 \uCF54\uB4DC\uAC00 \uC788\uC73C\uBA74\n\uCF54\uB4DC
-        1\uAC1C\uB2F9 <color=#00FFFF>2 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - "<symbol=0> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9
+        <color=#00FFFF><symbol=10000> +2</color>\n<symbol=6> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1\n\n"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -120,7 +126,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uCDA9\uB3CC"
+      - "\uCC45\uB354\uBBF8"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -128,8 +134,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC8FC\uC704 1\uCE78\uC758 \uCF54\uB4DC\uAC00 \uB3D9\uC791\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.\n\uD30C\uAD34\uD558\uBA74
-        <color=#00FFFF>2 \uC5F0\uAD6C \uD3EC\uC778\uD2B8</color> \uD68D\uB4DD"
+      - "3\uD134 \uD6C4 \uD30C\uAD34 \uC2DC <symbol=10000> +5  \r\n3\uAC1C \uC774\uC0C1
+        \uC874\uC7AC \uC2DC <symbol=0> 1\uAC1C\uB2F9 <symbol=10000> \xD72"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -137,7 +143,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC9C8\uBB38"
+      - "\uD68C\uB85C\uB3C4"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -145,7 +151,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=10> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=25> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -153,7 +161,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC2E4\uD5D8 \uC7A5\uBE44"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -161,7 +169,10 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=9> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9
+        <symbol=10000> +3  \n<symbol=20> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=26> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -169,7 +180,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC0AC\uACE0"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -177,7 +188,10 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <color=green><symbol=10000> +2</color>\n20% \uD655\uB960\uB85C
+        <symbol=6> \uB610\uB294 <symbol=7> \uD30C\uAD34\n<symbol=11> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\n\uC0AC\uACE0
+        \uD30C\uAD34 \uC2DC <color=green><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -185,7 +199,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB80C\uC988"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -193,7 +207,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=7> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
+        +1</color>\n<symbol=\uC804\uB958> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +5</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -201,7 +217,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uD68C\uB85C\uB3C4"
+      - "\uAE30\uC5B4"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -209,7 +225,11 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <symbol=10000> +2  \r\n4\uD134 \uD6C4 \uD30C\uAD34\uB428 
+        \r\n<symbol=6> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=6> 1\uAC1C\uB2F9 <symbol=10000> +2  \r\n<symbol=35> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 10% \uD655\uB960\uB85C <symbol=10000>
+        +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -217,7 +237,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC2E4\uD5D8"
+      - "\uC18C\uD654\uAE30"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -225,7 +245,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=8> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uC0AC\uACE0
+        \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\uD654\n\uC0AC\uACE0 \uD30C\uAD34 \uC2DC
+        <color=#00FFFF><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -233,7 +255,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC7A5\uBE44"
+      - "\uC138\uD3EC"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -241,7 +263,11 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <symbol=10000> +1  \r\n<symbol=15> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uB9E4\uD134 30% \uD655\uB960\uB85C \uC9C4\uD654
+        (\u2192 <symbol=18>)  \r\n<symbol=44> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=10000> +2  \r\n<symbol=16> \uC874\uC7AC \uC2DC
+        \uC9C4\uD654 \uD655\uB960 +20%"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -249,7 +275,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uAE30\uC5B4"
+      - "\uC950"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -257,7 +283,11 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <symbol=10000> +1  \r\n10\uD134 \uC774\uC0C1 \uC0DD\uC874
+        \uC2DC <symbol=14>\uB85C \uC9C4\uD654 (\uC720\uC804\uC790 \uC870\uC791 \uC950,
+        \uD134\uB2F9 <symbol=10000> +5)  \r\n<symbol=47> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 55% \uD655\uB960\uB85C <symbol=10000>
+        +3"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -265,7 +295,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB80C\uC988"
+      - "\uC720\uC804\uC790 \uC870\uC791 \uC950"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -273,7 +303,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <color=green><symbol=10000> +5</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -281,7 +311,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC18C\uD654\uAE30"
+      - DNA
       - 
       Flags: 0000
       Languages_Touch: []
@@ -289,7 +319,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<color=#00FFFF><symbol=12> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC \uD574\uB2F9 \uC138\uD3EC \uB9E4\uD134 30% \uD655\uB960\uB85C <symbol=18>\uB85C
+        \uC9C4\uD654 \uAC00\uB2A5</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -297,7 +329,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uC0AC\uACE0"
+      - "\uD604\uBBF8\uACBD"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -305,7 +337,10 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=12> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        \uC138\uD3EC 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>\n<symbol=40>
+        \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
+        +1</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -313,7 +348,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC57D\uBB3C"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -321,7 +356,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 50% \uD655\uB960\uB85C <color=#00FFFF><symbol=10000> +3</color>
+        \uB610\uB294 <color=#00FFFF><symbol=10000> -2</color>\n5\uD134 \uD6C4 \uD30C\uAD34\uB428"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -329,7 +365,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB17C\uBB38"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -337,7 +373,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uB9E4 \uD134 <color=green><symbol=10000> +7</color>\n<symbol=\uC758\uB300\uCD94\uCC9C\uC11C>
+        \uBCF4\uC720 \uC2DC \uB9E4 \uD134 \uCD94\uAC00\uB85C <color=green><symbol=10000>
+        +5</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -345,7 +383,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uBC1C\uD45C\uC790"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -353,7 +391,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=20> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=10000> +2  \n<symbol=31> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=10000> +1"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -361,7 +401,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uD68C\uC0AC"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -369,7 +409,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uAE30\uBCF8 <color=#00FFFF><symbol=10000> +4</color>, 3\uD134 \uC9C0\uC18D
+        \uD6C4 \uD30C\uAD34\n<symbol=7> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <color=#00FFFF><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -377,7 +419,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uCC28\uD2B8"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -385,7 +427,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<color=#00FFFF><symbol=23>\uACFC \uD568\uAED8 \uC804\uCCB4 \uCE78\uC5D0
+        \uC874\uC7AC \uC2DC <symbol=23>\uC758 \uBD80\uC815 \uD6A8\uACFC \uD655\uB960
+        10%\uB85C \uACE0\uC815</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -393,7 +437,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC2A4\uD0C0\uD2B8\uC5C5"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -401,7 +445,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uAE30\uBCF8 <symbol=10000> +1  \n<symbol=24> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC \uC9C4\uD654 \uD134 -1, <symbol=10000> +2, <symbol=24>
+        \uD30C\uAD34"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -409,7 +455,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC8FC\uC2DD"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -417,7 +463,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "40% \uD655\uB960\uB85C <color=green><symbol=10000> +5</color>\n30% \uD655\uB960\uB85C
+        <color=green><symbol=10000> -6</color>, \uBD80\uC815 \uD6A8\uACFC \uBC1C\uC0DD
+        \uC2DC \uC2EC\uBCFC \uD30C\uAD34"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -425,7 +473,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC0AC\uBB34\uC2E4"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -433,7 +481,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=22> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        \uD574\uB2F9 \uC2A4\uD0C0\uD2B8\uC5C5 \uC9C4\uD654 \uD134 -1, <color=green><symbol=10000>
+        +2</color> \uD6C4 \uD30C\uAD34\uB428"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -441,7 +491,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uCC45"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -449,7 +499,10 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "5\uD134 \uC774\uC0C1 \uC720\uC9C0 \uC2DC \uB9E4 \uD134 <symbol=10000> +3 
+        \r\n<symbol=29> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=10000> +2  \r\n<symbol=2> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=10000> +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -457,7 +510,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC720\uBB3C"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -465,7 +518,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uAE30\uBCF8 <symbol=10000> +4  \r\n<symbol=28> \uC0C1\uD558\uC88C\uC6B0
+        4\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +2  \r\n<symbol=7> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +1"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -473,7 +528,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uD0C0\uC784\uBA38\uC2E0"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -481,7 +536,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<color=green>\uB9E4 \uD134 10% \uD655\uB960\uB85C \uD30C\uAD34\uB41C \uC2EC\uBCFC
+        1\uAC1C \uBCF5\uAD6C, \uBCF5\uAD6C \uC2DC \uD0C0\uC784\uBA38\uC2E0 \uD30C\uAD34\uB428\n<symbol=30>
+        \uD30C\uAD34\uB418\uBA74 \uBC1C\uB3D9 \uD655\uB960 +40%</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -489,7 +546,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC9C0\uB3C4"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -497,7 +554,11 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "<symbol=26> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=26> 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>, \uBC1C\uB3D9
+        \uD6C4 \uD30C\uAD34\n<symbol=34> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=34> 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +1</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -505,7 +566,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
+      - "\uC0AC\uB8CC \uBD84\uC11D\uAC00"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -513,23 +574,816 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - 
-      - 
-      Flags: 0000
-      Languages_Touch: []
-    - Term: SymbolName.
-      TermType: 0
-      Description: 
-      Languages:
-      - 
+      - "<symbol=25> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=25> 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: SymbolEffect.
+    - Term: SymbolName.30
       TermType: 0
       Description: 
       Languages:
+      - "\uACE0\uB300 \uCE74\uB4DC"
       - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.30
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green>\uC9C4\uD654\uB41C \uC2EC\uBCFC\uC774 \uB2EC\uB825\uC5D0 \uC788\uC744
+        \uACBD\uC6B0 \uD574\uB2F9 \uC2EC\uBCFC\uC744 \uD30C\uAD34  \n\uD30C\uAD34\uB418\uBA74
+        <symbol=27> \uBC1C\uB3D9 \uD655\uB960 +40%</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.31
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC88\uC5ED"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.31
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <symbol=10000> +1  \n<symbol=19> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC <symbol=19> 1\uAC1C\uB2F9 <symbol=10000> +1  \n<symbol=37>
+        \uC0C1\uD558\uC88C\uC6B0 2\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=37> 1\uAC1C\uB2F9
+        <symbol=10000> +2  \n<symbol=34> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=34> 1\uAC1C\uB2F9 <symbol=10000> +3"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.32
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC0AC\uBB34\uB77C\uC774"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.32
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <color=#00FFFF><symbol=10000> +2</color>\n<symbol=37> \uC0C1\uD558\uC88C\uC6B0
+        2\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=37> 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +2</color>\n<symbol=35> \uC778\uC811 \uC2DC 10% \uD655\uB960\uB85C \uC804\uC124\uC758
+        \uCE90\uB9AD\uD130\uB85C \uC9C4\uD654\uD558\uBA70 \uB458 \uB2E4 \uD30C\uAD34\uB428"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.33
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAD7F\uC988"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.33
+      TermType: 0
+      Description: 
+      Languages:
+      - "2\uD68C \uC774\uC0C1 \uC5F0\uC18D \uB4F1\uC7A5 \uC2DC 1\uAC1C\uB2F9 <symbol=10000>
+        +2  \r\n<symbol=35> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +5  \r\n<symbol=0> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.34
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD55C\uC790"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.34
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=31>, <symbol=37> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <symbol=10000> +3  \r\n<symbol=35> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +5  \r\n<symbol=28> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.35
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAC8C\uC784\uAE30"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.35
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=33>, <symbol=34> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <color=#00FFFF><symbol=10000> +5</color>\n<symbol=32> \uC778\uC811
+        \uC2DC 10% \uD655\uB960\uB85C <symbol=36>\uB85C \uC9C4\uD654\uD558\uBA70
+        \uB458 \uB2E4 \uD30C\uAD34\uB428\n<symbol=37> \uC0C1\uD558\uC88C\uC6B0 2\uCE78
+        \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +2</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.36
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.36
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <color=orange><symbol=10000> +10</color>\n<symbol=0> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 5% \uD655\uB960\uB85C <color=orange><symbol=10000>
+        +10</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.37
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC720\uD559\uC0DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.37
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=31>, <symbol=32>, <symbol=35> \uC0C1\uD558\uC88C\uC6B0 2\uCE78 \uB0B4
+        \uAC01\uAC01 \uC874\uC7AC \uC2DC \uAC01 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +2</color>\n5\uBC88 \uB4F1\uC7A5 \uD6C4 \uD30C\uAD34\uB428"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.38
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC2DC\uB098\uB9AC\uC624"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.38
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <symbol=10000> +2  \r\n<symbol=39> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +1  \r\n<symbol=40> \uC0C1\uD558\uC88C\uC6B0
+        4\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.39
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC30\uC6B0"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.39
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <symbol=10000> +1  \r\n<symbol=38>, <symbol=41> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uAC01\uAC01 <symbol=10000> +3  \r\n<symbol=40>
+        \uC0C1\uD558\uC88C\uC6B0 4\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000>
+        +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.40
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC870\uBA85"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.40
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=38>, <symbol=39>, <symbol=41>, <symbol=42>, <symbol=43> \uC0C1\uD558\uC88C\uC6B0
+        4\uCE78 \uB0B4 \uAC01\uAC01 \uC874\uC7AC \uC2DC \uAC01 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +1</color>\n<symbol=16> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <color=#00FFFF><symbol=10000> +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.41
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAC10\uB3C5"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.41
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <color=#00FFFF><symbol=10000> +1</color>\n<symbol=39> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +3</color>\n<symbol=20>
+        \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
+        +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.42
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD3EC\uC2A4\uD130"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.42
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <color=#00FFFF><symbol=10000> +1</color>\n<symbol=43> \uC0C1\uD558\uC88C\uC6B0
+        4\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +3</color>\n<symbol=45>
+        \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
+        +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.43
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC601\uD654"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.43
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=41> \uC0C1\uD558\uC88C\uC6B0 4\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        50% \uD655\uB960\uB85C <color=green><symbol=10000> +5</color>, 45% \uD655\uB960\uB85C
+        <color=green><symbol=10000> -4</color>\n<symbol=37> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=green><symbol=10000> +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.44
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC545\uBCF4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.44
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uAE30\uBCF8 <symbol=10000> +1  \r\n<symbol=46> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +1  \r\n<symbol=47> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +2  \r\n<symbol=48> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=10000> +2"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.45
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uACF5\uC5F0"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.45
+      TermType: 0
+      Description: 
+      Languages:
+      - "2\uD68C \uB4F1\uC7A5 \uD6C4 \uD30C\uAD34\uB418\uBA70 <symbol=10000> +5 
+        \r\n<symbol=42> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=10000> +1  \r\n<symbol=47> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=10000> +2"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.46
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC5F0\uC2B5\uC2E4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.46
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=44> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=10000> +1  \r\n<symbol=47> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uC874\uC7AC \uC2DC <symbol=10000> +2  \r\n<symbol=0> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 10% \uD655\uB960\uB85C <symbol=10000>
+        +2"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.47
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC74C\uB300\uC0DD"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.47
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=44>, <symbol=45>, <symbol=46> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
+        \uAC01\uAC01 \uC874\uC7AC \uC2DC \uAC01 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +2</color>\n<symbol=13> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC 55% \uD655\uB960\uB85C <color=#00FFFF><symbol=10000> +3</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.48
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC808\uB300\uC74C\uAC10"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.48
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=44> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <color=#00FFFF><symbol=10000> +2</color>\n<symbol=49> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +3</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolName.49
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD5E4\uB4DC\uD3F0"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: SymbolEffect.49
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green><symbol=47> \uC0C1\uD558\uC88C\uC6B0 2\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC  \n\uB79C\uB364\uC73C\uB85C <symbol=44>, <symbol=45>, <symbol=48>
+        \uC911 1\uAC1C \uC0DD\uC131 \uD6C4 \uD5E4\uB4DC\uD3F0 \uD30C\uAD34</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.0
+      TermType: 0
+      Description: 
+      Languages:
+      - GPU
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.0
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=0> \uC0C1\uD558\uC88C\uC6B0 2\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uD134\uB2F9
+        <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.1
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC54C\uACE0\uB9AC\uC998"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.1
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=0> 3\uAC1C \uC774\uC0C1 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +2</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.2
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC9C8\uBB38"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.2
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=1> \uB610\uB294 <symbol=3> \uB9E4 \uD134 1\uAC1C \uC81C\uAC70"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.3
+      TermType: 0
+      Description: 
+      Languages:
+      - VPN
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.3
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green><symbol=3> \uBD80\uC815 \uD6A8\uACFC \uBB34\uD6A8 (\uC2EC\uBCFC\uC740
+        \uB0A8\uC74C)</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.4
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC804\uB958"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.4
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=7> 1\uAC1C\uB2F9 <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.5
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBA40\uD2F0\uD0ED"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.5
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=6> \uC0C1\uD558\uC88C\uC6B0 4\uCE78 \uB0B4 <symbol=7>, <symbol=9>
+        1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.6
+      TermType: 0
+      Description: 
+      Languages:
+      - "LED\uC804\uAD6C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.6
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=9> \uC804\uCCB4 \uAC15\uD654 \u2192 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.7
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC758\uB300\uCD94\uCC9C\uC11C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.7
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=18> \uC874\uC7AC \uC2DC \uB9E4 \uD134 <symbol=10000> +5"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.8
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC870\uC5B8\uC11C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.8
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF><symbol=13> \uC9C4\uD654 \uD134\uC218 -1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.9
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBCF4\uACE0\uC11C(\uC2E4\uD5D8)"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.9
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF><symbol=7> \uC2EC\uBCFC <symbol=10000> +2</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.10
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB85C\uB610"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.10
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBB34\uC791\uC704 \uC2EC\uBCFC 1\uAC1C <symbol=10000> \xD72"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.11
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uD2B9\uD5C8"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.11
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=20> \uC9C4\uD654 \uC2DC <color=#00FFFF><symbol=10000> +20 (1\uD68C
+        \uD55C\uC815)</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.12
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB17C\uB780"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.12
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=26> \uB4F1\uC7A5 \uC2DC 10% \uD655\uB960\uB85C <symbol=10000> +4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.13
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC15\uBB3C\uAD00"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.13
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=26> 3\uAC1C \uC774\uC0C1 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000>
+        +2</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.14
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC5F0\uB300 \uCE21\uC815\uAE30"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.14
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=25> \uC720\uC9C0 \uD134 \uC218 \xD7 <color=#00FFFF><symbol=10000>
+        +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.15
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uBC9A\uAF43"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.15
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=31>, <symbol=32>, <symbol=33>, <symbol=34>, <symbol=35>, <symbol=37>
+        \uB9E4 \uD134 <symbol=10000> +1"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.16
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCF00\uB9AC\uC5B4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.16
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF><symbol=37> \uC9C0\uC18D \uC2DC\uAC04 +2\uD134</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.17
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC628\uCC9C\uC5EC\uD589"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.17
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green><symbol=31> <symbol=32> <symbol=33> <symbol=34> <symbol=35>
+        <symbol=36> 15% \uD655\uB960\uB85C 1\uD134\uC5D0 2\uBC88 \uC791\uB3D9</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.18
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uACF5\uBAA8\uC804"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.18
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF><symbol=38> 2\uAC1C \uC774\uC0C1 \uC874\uC7AC \uC2DC 40%
+        \uD655\uB960\uB85C <symbol=39> \uC0DD\uC131</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.19
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCE74\uBA54\uB77C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.19
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=39>, <symbol=41> \uB4F1\uC7A5 \uC2DC <symbol=10000> +2"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.20
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uADF9\uC7A5"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.20
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=43> + <symbol=40> \uD568\uAED8 \uB4F1\uC7A5 \uC2DC <color=green><symbol=10000>
+        +5</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.21
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uCD08\uCCAD\uC7A5"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.21
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=40> + <symbol=39> + <symbol=41> \uB4F1\uC7A5 \uC2DC <color=orange><symbol=10000>
+        +8</color>, \uC5EC\uAE30\uC5D0 <symbol=43>\uAE4C\uC9C0 \uC788\uC744 \uACBD\uC6B0
+        <color=orange><symbol=10000> +15</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.22
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uB9C8\uC774\uD06C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.22
+      TermType: 0
+      Description: 
+      Languages:
+      - "<symbol=45> 1\uAC1C\uB2F9 <symbol=10000> +5"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.23
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC720\uD29C\uBE0C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.23
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=#00FFFF><symbol=44> <symbol=45> <symbol=46> <symbol=47> <symbol=48>
+        <symbol=49> \uC804\uCCB4 <symbol=10000> +1</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.24
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC575\uCF5C"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.24
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=orange><symbol=45> \uC2EC\uBCFC <symbol=10000> \xD72</color>"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemName.25
+      TermType: 0
+      Description: 
+      Languages:
+      - "\uC791\uACE1 \uC18C\uD504\uD2B8\uC6E8\uC5B4"
+      - 
+      Flags: 0000
+      Languages_Touch: []
+    - Term: ItemEffect.25
+      TermType: 0
+      Description: 
+      Languages:
+      - "<color=green>\uB9E4 \uD134 <symbol=44> 1\uAC1C \uC0DD\uC131</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -545,7 +1399,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<color=green>[\uACE0\uAE09]</color>"
+      - "<color=#00FFFF>[\uD76C\uADC0]</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -553,7 +1407,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<color=#00FFFF>[\uD76C\uADC0]</color>"
+      - "<color=green>[\uD2B9\uC218]</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -580,7 +1434,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw79-Z8c3g-2IA_vQY_yt6jKtCOwahV6uvHjIwzCc9w_DvOIyfBmH_RIsNXgbhkTFvX/exec
     Google_SpreadsheetKey: 1bFkHzzyKTUl6Q5aeIRYgWFCbpiKTDneGCl7vMHBoM-k
     Google_SpreadsheetName: I2Loc WannaGraduate Localization
-    Google_LastUpdatedVersion: 1744915758809
+    Google_LastUpdatedVersion: 1746538365997
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

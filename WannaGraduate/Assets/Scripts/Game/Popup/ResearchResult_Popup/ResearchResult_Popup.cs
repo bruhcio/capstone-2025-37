@@ -1,3 +1,4 @@
+using DominoGames.Core.EventSystem;
 using DominoGames.UI.PopupSystem;
 using System.Collections;
 using System.Collections.Generic;
@@ -48,6 +49,7 @@ public class ResearchResult_Popup : PopupBase
 
     public void HidePopup()
     {
+        DominoEventSystem.Pub(EEventTypes.OnSymbolSelectEnd);
         PopupSystem.GameSceneJYS.ResearchResult_Popup.Hide();
 
         if(PlayerSaveDataModel.data.researchPoint <= 0)

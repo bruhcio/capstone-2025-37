@@ -1,12 +1,15 @@
 using BBB.CSVData;
 using DominoGames.Core.EventSystem;
 using DominoGames.RPG;
+using QFSW.QC.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using VInspector.Libs;
+using static PlayerSaveDataModel;
 using Random = UnityEngine.Random;
 
 public class CalendarDailyView : UI_Base
@@ -27,7 +30,16 @@ public class CalendarDailyView : UI_Base
         this.symbolId = PlayerSaveDataModel.data.calenderSymbols[calendarId].Data.Id;
         this.onDailyDirectionEnd = onDailyDirectionEnd;
         this.bindSpecialEffect = bindSpecialEffect;
+
+        // 심볼 초기화
         InitSymbol();
+
+        //심볼 트리거 체크
+        if (CheckTrigger(out List<Vector2Int> foundSymbols))
+        {
+            // 심볼 특수 효과 (RP_Symbol_Id)
+
+        }
 
         StartCoroutine(RollSymbolDirection());
     }
@@ -37,18 +49,18 @@ public class CalendarDailyView : UI_Base
     {
         this.symbolId = -1;
 
-        if(symbolScript != null)
+        if (symbolScript != null)
         {
             Destroy(symbolScript);
         }
-        
+
         UpdateView();
     }
 
 
     public int GetBaseRevenue()
     {
-        if(this.symbolId == -1)
+        if (this.symbolId == -1)
         {
             return 0;
         }
@@ -59,7 +71,7 @@ public class CalendarDailyView : UI_Base
     // 심볼의 기본 수익 획득
     public void EarnBaseRevenue()
     {
-        if(this.symbolId == -1)
+        if (this.symbolId == -1)
         {
             return;
         }
@@ -84,6 +96,7 @@ public class CalendarDailyView : UI_Base
         var csvData = CSVDataContainer_SymbolData.GetSymbolData(this.symbolId);
         GetComponent<StatSystem>().AddBuff(EStatTypes.EarnRP, EStatCalcTypes.Constant, csvData.BaseRevenue);
 
+
         // 심볼 효과 스크립트 로드
         Type type = Type.GetType("RP_Symbol_" + this.symbolId + ", Assembly-CSharp");
 
@@ -94,6 +107,50 @@ public class CalendarDailyView : UI_Base
 
         symbolScript = (RP_Symbol)gameObject.AddComponent(type);
         this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect());
+    }
+
+    private bool CheckTrigger(out List<Vector2Int> foundPositions)
+    {
+        foundPositions = new List<Vector2Int>();
+
+        if (this.symbolId == -1)
+        {
+            return false;
+        }
+
+
+        // 심볼 트리거 타입 및 파라미터 데이터 로드
+        var csvData = CSVDataContainer_SymbolData.GetSymbolData(this.symbolId);
+
+        // 트리거 스크립트 로드
+        Type type = Type.GetType(csvData.Trigger + ", Assembly-CSharp");
+
+        if (type == null)
+        {
+            Debug.LogError($"Invalid trigger type for id={this.symbolId}");
+            return false;
+        }
+
+        // 트리거 객체 생성
+        var trigger = (ITrigger)Activator.CreateInstance(type);
+
+        // 트리거 파라미터 생성
+        var triggerParameter = new TriggerParameter
+        {
+            SymbolIndex = new Vector2Int(calendarId / 5, calendarId % 5),
+            RelativeArea = csvData.RelativeArea,
+            //AbsoluteArea = csvData.AbsoluteArea,
+            TargetSymbols = csvData.TargetSymbols,
+        };
+
+        if (trigger.Evaluate(triggerParameter, ref foundPositions))
+        {
+            Debug.Log($"Trigger={type.Name}: return true");
+            return true;
+        }
+
+        Debug.Log($"Trigger={type.Name}: return false");
+        return false;
     }
 
     private void UpdateView(int symbolId)
@@ -122,7 +179,7 @@ public class CalendarDailyView : UI_Base
         int randImageCount = Random.Range(5, 15);
         icon.gameObject.SetActive(true);
 
-        for (int i = 0; i < randImageCount;i++)
+        for (int i = 0; i < randImageCount; i++)
         {
             randIdx = Random.Range(0, PlayerSaveDataModel.data.ownedSymbols.Count);
             symbolData = PlayerSaveDataModel.data.ownedSymbols[randIdx];
@@ -134,7 +191,7 @@ public class CalendarDailyView : UI_Base
 
         UpdateView();
 
-        if(this.symbolId >= 0)
+        if (this.symbolId >= 0)
         {
             GetComponent<ObjectScaleBouncer>().PlayEffect();
         }

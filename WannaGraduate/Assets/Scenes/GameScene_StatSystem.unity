@@ -7556,7 +7556,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  spinButton: {fileID: 0}
+  spinButton: {fileID: 287633962}
   dayObjects:
   - {fileID: 6866256920247537808}
   - {fileID: 1808642561}

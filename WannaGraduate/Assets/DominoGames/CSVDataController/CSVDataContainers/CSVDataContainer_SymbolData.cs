@@ -43,7 +43,7 @@ namespace BBB.CSVData
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
         public static void InitData()
         {
-            if(data != null)
+            if (data != null)
             {
                 return;
             }
@@ -51,7 +51,7 @@ namespace BBB.CSVData
             data = Resources.Load<CSVDataContainer_SymbolData>("CSVData/SymbolData");
 
             itemsByRank.Clear();
-            for(int i = 0; i < data.m_Items.Length; i++)
+            for (int i = 0; i < data.m_Items.Length; i++)
             {
                 if (!itemsByRank.ContainsKey(data.m_Items[i].Rarity))
                 {
@@ -71,11 +71,11 @@ namespace BBB.CSVData
         public string Name;
         public int Rarity;
         public int BaseRevenue;
-        public SymbolEffectArea EffectArea = SymbolEffectArea.Center;
         public int Remain = -1; // 남은 횟수 (-1 = 제한 없음)
-
-        //public List<ITrigger> triggers = new List<ITrigger>();
-        //public List<ISpecialEffect> specialEffects = new List<ISpecialEffect>();
+        public string Trigger;
+        public RelativeSymbolEffectArea RelativeArea;
+        //public AbsoluteSymbolEffectArea AbsoluteArea;
+        public List<int> TargetSymbols = new();
     }
 
 
@@ -152,34 +152,32 @@ namespace BBB.CSVData
     [Flags]
     public enum RelativeSymbolEffectArea
     {
-        None = 0,
+        None = 0,               // 기본값
+        Self = 1 << 0,          // 1 << 0 = 1
+        Top = 1 << 1,           // 1 << 1 = 2
+        Bottom = 1 << 2,        // 1 << 2 = 4
+        Left = 1 << 3,          // 1 << 3 = 8
+        Right = 1 << 4,         // 1 << 4 = 16
+        TopLeft = 1 << 5,       // 1 << 5 = 32
+        TopRight = 1 << 6,      // 1 << 6 = 64
+        BottomLeft = 1 << 7,    // 1 << 7 = 128
+        BottomRight = 1 << 8,   // 1 << 8 = 256
 
-        // 3x3 기준 (현재 셀을 중심으로 주변)
-        Self = 1 << 0,  // 중심 셀
-        Top = 1 << 1,  // 바로 위
-        Bottom = 1 << 2,  // 바로 아래
-        Left = 1 << 3,  // 바로 왼쪽
-        Right = 1 << 4,  // 바로 오른쪽
-        TopLeft = 1 << 5,  // 왼쪽 위
-        TopRight = 1 << 6,  // 오른쪽 위
-        BottomLeft = 1 << 7,  // 왼쪽 아래
-        BottomRight = 1 << 8,  // 오른쪽 아래
+        // 복합 플래그 (기존 플래그 조합)
+        Surrounding3x3 = Top | Bottom | Left | Right
+                       | TopLeft | TopRight | BottomLeft | BottomRight,
+        // (2 | 4 | 8 | 16 | 32 | 64 | 128 | 256) = 510
 
-        // 3x3 전체
-        Surrounding3x3 = Self | Top | Bottom | Left | Right | TopLeft | TopRight | BottomLeft | BottomRight,
-
-        // X 모양
         Diagonals = TopLeft | TopRight | BottomLeft | BottomRight,
+        // (32 | 64 | 128 | 256) = 480
 
-        // + 모양
-        NonDiagonals = Self | Top | Bottom | Left | Right,
+        NonDiagonals = Top | Bottom | Left | Right,
+        // (2 | 4 | 8 | 16) = 30
 
-        // 상대 영역: 같은 행 전체 (자신 포함 혹은 제외할 것은 사용 시 결정)
-        SameRow = 1 << 9,
-
-        // 상대 영역: 같은 열 전체 (자신 포함 혹은 제외할 것은 사용 시 결정)
-        SameColumn = 1 << 10
+        SameRow = 1 << 9,                        // 1 << 9 = 512
+        SameColumn = 1 << 10                        // 1 << 10 = 1024
     }
+
 }
 
 public enum EQuestionType

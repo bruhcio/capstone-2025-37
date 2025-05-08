@@ -6,25 +6,13 @@ using UnityEngine;
 
 public class RelativeGridScanTrigger : ITrigger
 {
-    public bool Evaluate(TriggerContext context, ref List<Vector2Int> foundPositions)
+    public bool Evaluate(TriggerParameter context, ref List<Vector2Int> foundPositions)
     {
         if (context == null)
             return false;
 
-        // ExtraData에서 "RelativeSymbolEffectArea"와 "TargetSymbols"를 가져옵니다.
-        if (!context.ExtraData.TryGetValue("RelativeSymbolEffectArea", out object relativeAreaObj) ||
-            !context.ExtraData.TryGetValue("TargetSymbols", out object targetSymbolIdsObj))
-        {
-            Debug.LogWarning($"{context.SymbolIndex} 에 필요한 ExtraData 가 누락되었습니다.");
-            return false;
-        }
-
-        // 캐스팅
-        RelativeSymbolEffectArea relativeArea = (RelativeSymbolEffectArea)relativeAreaObj;
-        List<int> targetSymbolIds = (List<int>)targetSymbolIdsObj;
-
         Vector2Int currentIndex = context.SymbolIndex; // 현재 심볼의 그리드 위치
-        List<Vector2Int> offsets = GetOffsetsForRelativeArea(relativeArea); // 설정된 상대 영역에 해당하는 오프셋
+        List<Vector2Int> offsets = GetOffsetsForRelativeArea(context.RelativeArea); // 설정된 상대 영역에 해당하는 오프셋
 
         var calendarSymbols = PlayerSaveDataModel.data.calenderSymbols;
         if (calendarSymbols == null || calendarSymbols.Count == 0)
@@ -42,7 +30,7 @@ public class RelativeGridScanTrigger : ITrigger
                 // symbol.GridIndex는 현재 심볼의 위치가 저장된 Vector2Int
                 if (symbol.GridIndex.Equals(checkCell))
                 {
-                    if (targetSymbolIds.Contains(symbol.Data.Id))
+                    if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
                         Debug.Log($"타겟 심볼 ID {symbol.Data.Id} 를 위치 {checkCell} 에서 발견하였습니다.");
                         foundPositions.Add(symbol.GridIndex);
@@ -52,13 +40,13 @@ public class RelativeGridScanTrigger : ITrigger
         }
 
         // (2) SameRow 검사: ExtraData에 SameRow 플래그가 있으면, 현재 행 전체를 검사
-        if (relativeArea.HasFlag(RelativeSymbolEffectArea.SameRow))
+        if (context.RelativeArea.HasFlag(RelativeSymbolEffectArea.SameRow))
         {
             foreach (var symbol in calendarSymbols)
             {
                 if (symbol.GridIndex.y == currentIndex.y)
                 {
-                    if (targetSymbolIds.Contains(symbol.Data.Id))
+                    if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
                         Debug.Log($"타겟 심볼 ID {symbol.Data.Id} 를 같은 행 {currentIndex.y} 에서 발견하였습니다.");
                         foundPositions.Add(symbol.GridIndex);
@@ -68,13 +56,13 @@ public class RelativeGridScanTrigger : ITrigger
         }
 
         // (3) SameColumn 검사: ExtraData에 SameColumn 플래그가 있으면, 현재 열 전체를 검사
-        if (relativeArea.HasFlag(RelativeSymbolEffectArea.SameColumn))
+        if (context.RelativeArea.HasFlag(RelativeSymbolEffectArea.SameColumn))
         {
             foreach (var symbol in calendarSymbols)
             {
                 if (symbol.GridIndex.x == currentIndex.x)
                 {
-                    if (targetSymbolIds.Contains(symbol.Data.Id))
+                    if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
                         Debug.Log($"타겟 심볼 ID {symbol.Data.Id}를 같은 열 {currentIndex.x}에서 발견하였습니다.");
                         foundPositions.Add(symbol.GridIndex);

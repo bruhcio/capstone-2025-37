@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RP_Symbol : MonoBehaviour
 {
-    public virtual IEnumerator SpecialEffect()
+    public virtual IEnumerator SpecialEffect(List<int> foundPositions)
     {
         DominoEventSystem.Pub(EEventTypes.OnOneDaySpecialEffectEnd);
         yield break;

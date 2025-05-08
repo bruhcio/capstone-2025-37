@@ -33,7 +33,7 @@ MonoBehaviour:
     Name: "\uBC84\uADF8"
     Rarity: 0
     BaseRevenue: -1
-    Remain: -218
+    Remain: -1
     Trigger: AlwaysActiveTrigger
     RelativeArea: 0
     TargetSymbols: 

@@ -75,7 +75,7 @@ namespace BBB.CSVData
         public string Trigger;
         public RelativeSymbolEffectArea RelativeArea;
         //public AbsoluteSymbolEffectArea AbsoluteArea;
-        public List<int> TargetSymbols = new();
+        public int[] TargetSymbols;
     }
 
 

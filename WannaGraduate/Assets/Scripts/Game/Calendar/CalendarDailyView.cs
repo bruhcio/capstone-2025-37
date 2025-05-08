@@ -35,7 +35,7 @@ public class CalendarDailyView : UI_Base
         InitSymbol();
 
         //심볼 트리거 체크
-        if (CheckTrigger(out List<Vector2Int> foundSymbols))
+        if (CheckTrigger(out List<Vector2Int> foundPositions))
         {
             // 심볼 특수 효과 (RP_Symbol_Id)
 
@@ -106,7 +106,7 @@ public class CalendarDailyView : UI_Base
         }
 
         symbolScript = (RP_Symbol)gameObject.AddComponent(type);
-        this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect());
+        this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect(null));
     }
 
     private bool CheckTrigger(out List<Vector2Int> foundPositions)
@@ -140,7 +140,7 @@ public class CalendarDailyView : UI_Base
             SymbolIndex = new Vector2Int(calendarId / 5, calendarId % 5),
             RelativeArea = csvData.RelativeArea,
             //AbsoluteArea = csvData.AbsoluteArea,
-            TargetSymbols = csvData.TargetSymbols,
+            TargetSymbols = csvData.TargetSymbols.ToList(),
         };
 
         if (trigger.Evaluate(triggerParameter, ref foundPositions))

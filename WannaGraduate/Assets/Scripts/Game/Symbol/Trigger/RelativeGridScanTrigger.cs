@@ -17,7 +17,7 @@ public class RelativeGridScanTrigger : ITrigger
         var calendarSymbols = PlayerSaveDataModel.data.calenderSymbols;
         if (calendarSymbols == null || calendarSymbols.Count == 0)
         {
-            Debug.LogWarning("캘린더 심볼 데이터가 비어있습니다.");
+            Debug.LogWarning("Emtpy list: calenderSymbols");
             return false;
         }
 
@@ -32,7 +32,7 @@ public class RelativeGridScanTrigger : ITrigger
                 {
                     if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
-                        Debug.Log($"타겟 심볼 ID {symbol.Data.Id} 를 위치 {checkCell} 에서 발견하였습니다.");
+                        Debug.Log($"Find symbol id={symbol.Data.Id}, in cell={checkCell}");
                         foundPositions.Add(symbol.GridIndex);
                     }
                 }
@@ -48,7 +48,7 @@ public class RelativeGridScanTrigger : ITrigger
                 {
                     if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
-                        Debug.Log($"타겟 심볼 ID {symbol.Data.Id} 를 같은 행 {currentIndex.y} 에서 발견하였습니다.");
+                        Debug.Log($"Find symbol id={symbol.Data.Id}, in row={currentIndex.y}");
                         foundPositions.Add(symbol.GridIndex);
                     }
                 }
@@ -64,7 +64,7 @@ public class RelativeGridScanTrigger : ITrigger
                 {
                     if (context.TargetSymbols.Contains(symbol.Data.Id))
                     {
-                        Debug.Log($"타겟 심볼 ID {symbol.Data.Id}를 같은 열 {currentIndex.x}에서 발견하였습니다.");
+                        Debug.Log($"Find symbol id={symbol.Data.Id}, in col={currentIndex.x}");
                         foundPositions.Add(symbol.GridIndex);
                     }
                 }

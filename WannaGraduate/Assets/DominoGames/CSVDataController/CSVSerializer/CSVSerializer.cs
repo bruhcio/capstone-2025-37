@@ -86,10 +86,11 @@ public class CSVSerializer
         if (value == null || value == "")
             return;
 
+        Debug.Log(fieldinfo);
         if (fieldinfo.FieldType.IsArray)
         {
             Type elementType = fieldinfo.FieldType.GetElementType();
-            string[] elem = value.Split(" / ");
+            string[] elem = value.Split(",");
             Array array_value = Array.CreateInstance(elementType, elem.Length);
             for (int i = 0; i < elem.Length; i++)
             {
@@ -101,7 +102,10 @@ public class CSVSerializer
             fieldinfo.SetValue(v, array_value);
         }
         else if (fieldinfo.FieldType.IsEnum)
+        {
+            Debug.Log(Enum.Parse(fieldinfo.FieldType, value.ToString()));
             fieldinfo.SetValue(v, Enum.Parse(fieldinfo.FieldType, value.ToString()));
+        }
         else if (value.IndexOf('.') != -1 &&
             (fieldinfo.FieldType == typeof(Int32) || fieldinfo.FieldType == typeof(Int64) || fieldinfo.FieldType == typeof(Int16)))
         {

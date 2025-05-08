@@ -35,8 +35,8 @@ MonoBehaviour:
     BaseRevenue: -1
     Remain: -1
     Trigger: AlwaysActiveTrigger
-    RelativeArea: 0
-    TargetSymbols: 
+    RelativeArea: 2
+    TargetSymbols: 02000000
   - Id: 3
     Name: "\uCEE4\uD53C"
     Rarity: 0
@@ -44,23 +44,23 @@ MonoBehaviour:
     Remain: -1
     Trigger: 
     RelativeArea: 0
-    TargetSymbols: 
+    TargetSymbols: 0200000003000000
   - Id: 4
     Name: AI
     Rarity: 1
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 0
-    TargetSymbols: 
+    RelativeArea: 30
+    TargetSymbols: 010000000200000003000000
   - Id: 5
     Name: "\uCDA9\uB3CC"
     Rarity: 1
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 0
-    TargetSymbols: 
+    RelativeArea: 1
+    TargetSymbols: 00000000010000000200000003000000
   - Id: 6
     Name: "\uC9C8\uBB38"
     Rarity: 2

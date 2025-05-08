@@ -30,9 +30,9 @@ public class SymbolItemTextMaker : MonoBehaviour
     public static void ProcessString(string input, TMP_Text targetText)
     {
         int childCount = targetText.transform.childCount;
-        for (int i = 0; i < childCount; i++)
+        for (int i = 0; i < childCount - 1; i++)
         {
-            ResourcesObjectPooler.Destroy(targetText.transform.GetChild(0).gameObject);
+            ResourcesObjectPooler.Destroy(targetText.transform.GetChild(1).gameObject);
         }
 
         string[] splitParts = tagRegex.Split(input);

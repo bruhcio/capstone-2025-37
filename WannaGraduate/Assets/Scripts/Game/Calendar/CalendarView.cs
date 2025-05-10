@@ -149,7 +149,10 @@ public class CalendarView : UI_Base
         }
         else
         {
-            PopupSystem.GameSceneJYS.AddSymbol_Popup.Show(null);
+            PopupSystem.GameSceneJYS.AddSymbol_Popup.Show(null, popup =>
+            {
+                popup.gameObject.SetActive(true);
+            });
         }
 
         DominoEventSystem.Pub(EEventTypes.OnEarnBaseRevenueEnd);

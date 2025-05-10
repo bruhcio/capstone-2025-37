@@ -36,6 +36,9 @@ public class SymbolSelectPanel : UI_Base
     {
         // 심볼을 Owned Symbol에 추가
         PlayerSaveDataModel.data.AddOwnedSymbol(symbolId);
-        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide();
+        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide(popup =>
+        {
+            popup.gameObject.SetActive(false);
+        });
     }
 }

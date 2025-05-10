@@ -1,4 +1,4 @@
-using BBB.CSVData;
+ï»¿using BBB.CSVData;
 using DominoGames.UI.PopupSystem;
 using RNGNeeds;
 using System.Collections;
@@ -19,9 +19,9 @@ public class AddSymbol_Popup : PopupBase
 
     public override void OnShow(object args)
     {
-        leftMonthText.text = "<color=#00FFFF>" + (PlayerSaveDataModel.data.spinCount) + "´Ş</color> ÈÄ¿¡ ¿¬±¸ ½ÇÀû Æò°¡";
+        leftMonthText.text = "<color=#00FFFF>" + (PlayerSaveDataModel.data.spinCount) + "ë‹¬</color> í›„ì— ì—°êµ¬ ì‹¤ì  í‰ê°€";
 
-        // ¸ğµç ½Éº¼µé Áß¿¡ ÇÏ³ª°¡ ·£´ıÇÏ°Ô µîÀåÇÕ´Ï´Ù
+        // ëª¨ë“  ì‹¬ë³¼ë“¤ ì¤‘ì— í•˜ë‚˜ê°€ ëœë¤í•˜ê²Œ ë“±ì¥í•©ë‹ˆë‹¤
         for (int i = 0; i < symbolPanels.Count; i++)
         {
             int rank = symbolRankList.PickValue();
@@ -33,6 +33,9 @@ public class AddSymbol_Popup : PopupBase
 
     public void SkipSelection()
     {
-        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide();
+        PopupSystem.GameSceneJYS.AddSymbol_Popup.Hide(popup =>
+        {
+            popup.gameObject.SetActive(false);
+        });
     }
 }

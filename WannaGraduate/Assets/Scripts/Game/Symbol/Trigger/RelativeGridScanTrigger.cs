@@ -25,6 +25,11 @@ public class RelativeGridScanTrigger : ITrigger
         {
             int checkCalendarIndex = currentIndex + offset;
 
+            if(checkCalendarIndex >= 20 || checkCalendarIndex < 0)
+            {
+                continue;
+            }
+
             if (context.TargetSymbols.Contains(PlayerSaveDataModel.data.GetSymbolIdFromCalendar(checkCalendarIndex)))
             {
                 foundCalendarIds.Add(checkCalendarIndex);
@@ -35,6 +40,7 @@ public class RelativeGridScanTrigger : ITrigger
         if (context.RelativeArea.HasFlag(RelativeSymbolEffectArea.SameRow))
         {
             int checkCalendarIndex = context.CalendarIndex / 5 * 5;
+
             for(int i = 0; i < 5; i++)
             {
                 if (context.TargetSymbols.Contains(PlayerSaveDataModel.data.GetSymbolIdFromCalendar(checkCalendarIndex + i)))

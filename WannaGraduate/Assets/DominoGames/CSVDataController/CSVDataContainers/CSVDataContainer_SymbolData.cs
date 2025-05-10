@@ -80,6 +80,10 @@ namespace BBB.CSVData
 
         public string SpecialEffect;
         public string[] SpecialEffectParams;
+
+        public int OnDestroyRP;
+        public string EvolvingTarget;
+        public int EvolvingDuration;
     }
 
 

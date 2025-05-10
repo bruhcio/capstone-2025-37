@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class SpecialEffectBlackBoard
 {
-    private static Dictionary<int, SymbolSpecialEffectDataContainer> symbolEffectData = new();
+    private static Dictionary<int, object> symbolEffectData = new();
 
-    public static void SetSymbolEffectData(int symbolInstanceId, SymbolSpecialEffectDataContainer data)
+    public static object GetSymbolEffectData(int symbolInstanceId, object defaultValue)
     {
-        symbolEffectData[symbolInstanceId] = data;
+        if (!symbolEffectData.ContainsKey(symbolInstanceId))
+        {
+            symbolEffectData[symbolInstanceId] = defaultValue;
+        }
+
+        return symbolEffectData[symbolInstanceId];
     }
 
-    public static SymbolSpecialEffectDataContainer GetSymbolEffectData(int symbolInstanceId)
+    public static void SetSymbolEffectData(int symbolInstanceId, object value)
     {
-        return symbolEffectData[symbolInstanceId];
+        symbolEffectData[symbolInstanceId] = value;
     }
 
     public static void ClearSymbolEffectData()
     {
         symbolEffectData.Clear();
     }
-}
-
-public class SymbolSpecialEffectDataContainer {
-    public int evolvingDuration = 0; // 진화 까지 남은 턴
-    public int evolvingDestSymbolId = 0; // 진화 시 변경 될 symbol id (기존 심볼 삭제, 이 id를 통해서 새로운 심볼 생성)
-
 }

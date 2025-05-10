@@ -19,52 +19,58 @@ MonoBehaviour:
     Rarity: 0
     BaseRevenue: 1
     Remain: -1
-    Trigger: RelativeGridScanTrigger
-    RelativeArea: 1024
-    TargetSymbols: 01000000020000000300000004000000
-    SpecialEffect: AddResearchPointSpecialEffect
-    SpecialEffectParams:
-    - self
-    - 1
+    Trigger: 
+    RelativeArea: 0
+    TargetSymbols: 
+    SpecialEffect: 
+    SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 1
     Name: "\uCC45\uB354\uBBF8"
     Rarity: 0
     BaseRevenue: 0
     Remain: -1
-    Trigger: RelativeGridScanTrigger
-    RelativeArea: 512
-    TargetSymbols: 00000000020000000300000004000000
-    SpecialEffect: AddResearchPointSpecialEffect
+    Trigger: AlwaysActiveTrigger
+    RelativeArea: 0
+    TargetSymbols: 
+    SpecialEffect: DestroyAfterTurnSpecialEffect
     SpecialEffectParams:
-    - all
-    - 2
+    - 3
+    OnDestroyRP: 5
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 2
     Name: "\uBC84\uADF8"
     Rarity: 0
     BaseRevenue: -1
     Remain: -1
-    Trigger: RelativeGridScanTrigger
-    RelativeArea: 1024
-    TargetSymbols: 00000000010000000300000004000000
-    SpecialEffect: AddResearchPointSpecialEffect
-    SpecialEffectParams:
-    - others
-    - 3
+    Trigger: 
+    RelativeArea: 0
+    TargetSymbols: 
+    SpecialEffect: 
+    SpecialEffectParams: []
+    OnDestroyRP: 8
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 3
     Name: "\uCEE4\uD53C"
     Rarity: 0
     BaseRevenue: 2
     Remain: -1
-    Trigger: RelativeGridScanTrigger
-    RelativeArea: 512
-    TargetSymbols: 00000000010000000200000004000000
-    SpecialEffect: AddResearchPointSpecialEffect
+    Trigger: AlwaysActiveTrigger
+    RelativeArea: 0
+    TargetSymbols: 
+    SpecialEffect: DestroyAfterTurnSpecialEffect
     SpecialEffectParams:
-    - self
-    - 1
+    - 3
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 4
     Name: AI
@@ -72,12 +78,15 @@ MonoBehaviour:
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 1024
-    TargetSymbols: 00000000010000000200000003000000
+    RelativeArea: 480
+    TargetSymbols: 00000000
     SpecialEffect: AddResearchPointSpecialEffect
     SpecialEffectParams:
-    - all
+    - others
     - 2
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 5
     Name: "\uCDA9\uB3CC"
@@ -85,12 +94,15 @@ MonoBehaviour:
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 512
-    TargetSymbols: 00000000010000000200000003000000
-    SpecialEffect: AddResearchPointSpecialEffect
+    RelativeArea: 480
+    TargetSymbols: 00000000
+    SpecialEffect: MultiplyBaseRevenueSpecialEffect
     SpecialEffectParams:
     - others
-    - 3
+    - -100
+    OnDestroyRP: 2
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 10
     Name: "\uD68C\uB85C\uB3C4"
@@ -102,6 +114,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 11
     Name: "\uC2E4\uD5D8"
@@ -113,6 +128,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 12
     Name: "\uC7A5\uBE44"
@@ -124,6 +142,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 13
     Name: "\uAE30\uC5B4"
@@ -135,6 +156,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 14
     Name: "\uB80C\uC988"
@@ -146,6 +170,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 15
     Name: "\uC18C\uD654\uAE30"
@@ -157,6 +184,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 16
     Name: "\uC0AC\uACE0"
@@ -168,6 +198,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 20
     Name: "\uC138\uD3EC"
@@ -179,6 +212,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 21
     Name: "\uC950"
@@ -190,6 +226,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 22
     Name: DNA
@@ -201,6 +240,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 23
     Name: "\uD604\uBBF8\uACBD"
@@ -212,6 +254,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 24
     Name: "\uC57D\uBB3C"
@@ -223,6 +268,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 25
     Name: "\uB17C\uBB38"
@@ -234,6 +282,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 26
     Name: "\uC758\uB300\uC0DD"
@@ -245,6 +296,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 30
     Name: "\uBC88\uC5ED"
@@ -256,6 +310,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 31
     Name: "\uAD7F\uC988"
@@ -267,6 +324,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 32
     Name: "\uD55C\uC790"
@@ -278,6 +338,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 33
     Name: "\uC0AC\uBB34\uB77C\uC774"
@@ -289,6 +352,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 34
     Name: "\uAC8C\uC784\uAE30"
@@ -300,6 +366,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 35
     Name: "\uC720\uD559\uC0DD"
@@ -311,6 +380,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 36
     Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
@@ -322,6 +394,9 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0
   - InstanceId: -1
     Id: 37
     Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
@@ -333,3 +408,6 @@ MonoBehaviour:
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
+    OnDestroyRP: 0
+    EvolvingTarget: 
+    EvolvingDuration: 0

@@ -3,6 +3,7 @@ using DominoGames.Core.EventSystem;
 using DominoGames.RPG;
 using RNGNeeds;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -109,10 +110,12 @@ public class GameManager : MonoBehaviour
             PlayerSaveDataModel.data.calendarSIds.Add(null);
         }
 
+        if (PlayerSaveDataModel.data.calendarSIds.Count > 20)
+            PlayerSaveDataModel.data.calendarSIds.SetLength(20);
+
         // shuffle list
         System.Random rand = new();
         PlayerSaveDataModel.data.calendarSIds = PlayerSaveDataModel.data.calendarSIds.OrderBy(_ => rand.Next()).ToList();
-        Debug.Log(PlayerSaveDataModel.data.calendarSIds.Count);
     }
 
 

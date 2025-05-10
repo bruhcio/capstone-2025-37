@@ -175,12 +175,12 @@ public class CalendarView : UI_Base
             if(CheckTrigger(i, out interactedCalendarIdx))
             {
                 // 심볼 흔들기
-                dayObjects[i].transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutQuart);
+                dayObjects[i].transform.DOScale(1.5f, 0.3f).SetEase(Ease.OutQuart);
                 foreach(int idx in interactedCalendarIdx)
                 {
-                    dayObjects[idx].transform.DOShakePosition(0.5f, 20f, 15, 90, false, false);
+                    dayObjects[idx].transform.DOShakePosition(0.5f, 20f, 20, 90, false, false);
                 }
-                dayObjects[i].transform.DOShakePosition(0.5f, 20f, 15, 90, false, false);
+                dayObjects[i].transform.DOShakePosition(0.5f, 20f, 20, 90, false, false);
                 yield return new WaitForSeconds(0.5f);
 
                 // 심볼 특수 효과 타입 및 파라미터 로드

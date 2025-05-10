@@ -56,9 +56,31 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
         ownedSymbols.Add(symbolInstanceId++, symbolId);
     }
 
-    public void AddOwnedItems(int itemId)
+    public void AddOwnedItem(int itemId)
     {
         ownedItems.Add(itemInstanceId++, itemId);
+    }
+
+    public void RemoveOwnedSymbol(int sid, int calendarId = -1)
+    {
+        var csvData = CSVDataContainer_SymbolData.GetSymbolData(PlayerSaveDataModel.data.ownedSymbols[sid]);
+
+        if(calendarId == -1)
+        {
+            RPEarnTextEffect.Instantiate(null, csvData.OnDestroyRP);
+        }
+        else
+        {
+            RPEarnTextEffect.Instantiate(CalendarView.Instance.dayObjects[calendarId].gameObject, csvData.OnDestroyRP);
+            CalendarView.Instance.dayObjects[calendarId].ClearSymbol();
+        }
+
+        ownedSymbols.Remove(sid);
+    }
+
+    public void RemoveOwnedItem(int sid)
+    {
+        ownedItems.Remove(sid);
     }
 
     public void UpdateData()

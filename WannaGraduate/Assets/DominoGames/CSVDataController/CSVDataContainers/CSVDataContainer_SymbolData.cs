@@ -67,6 +67,7 @@ namespace BBB.CSVData
     [System.Serializable]
     public class CSVDataRow_SymbolData
     {
+        public int InstanceId = -1;
         public int Id = -1;
         public string Name;
         public int Rarity;
@@ -76,6 +77,9 @@ namespace BBB.CSVData
         public RelativeSymbolEffectArea RelativeArea;
         //public AbsoluteSymbolEffectArea AbsoluteArea;
         public int[] TargetSymbols;
+
+        public string SpecialEffect;
+        public string[] SpecialEffectParams;
     }
 
 

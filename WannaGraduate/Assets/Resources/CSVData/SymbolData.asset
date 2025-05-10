@@ -13,63 +13,86 @@ MonoBehaviour:
   m_Name: SymbolData
   m_EditorClassIdentifier: 
   m_Items:
-  - Id: 0
+  - InstanceId: -1
+    Id: 0
     Name: "\uCF54\uB4DC"
     Rarity: 0
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
-    TargetSymbols: 00000000010000000200000003000000
-  - Id: 1
+    RelativeArea: 1024
+    TargetSymbols: 01000000020000000300000004000000
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - self
+    - 1
+  - InstanceId: -1
+    Id: 1
     Name: "\uCC45\uB354\uBBF8"
     Rarity: 0
     BaseRevenue: 0
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
-    TargetSymbols: 00000000010000000200000003000000
-  - Id: 2
+    RelativeArea: 512
+    TargetSymbols: 00000000020000000300000004000000
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - all
+    - 2
+  - InstanceId: -1
+    Id: 2
     Name: "\uBC84\uADF8"
     Rarity: 0
     BaseRevenue: -1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
-    TargetSymbols: 00000000010000000200000003000000
-  - Id: 3
+    RelativeArea: 1024
+    TargetSymbols: 00000000010000000300000004000000
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - others
+    - 3
+  - InstanceId: -1
+    Id: 3
     Name: "\uCEE4\uD53C"
     Rarity: 0
     BaseRevenue: 2
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
-    TargetSymbols: 00000000010000000200000003000000
-  - Id: 4
+    RelativeArea: 512
+    TargetSymbols: 00000000010000000200000004000000
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - self
+    - 1
+  - InstanceId: -1
+    Id: 4
     Name: AI
     Rarity: 1
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
+    RelativeArea: 1024
     TargetSymbols: 00000000010000000200000003000000
-  - Id: 5
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - all
+    - 2
+  - InstanceId: -1
+    Id: 5
     Name: "\uCDA9\uB3CC"
     Rarity: 1
     BaseRevenue: 1
     Remain: -1
     Trigger: RelativeGridScanTrigger
-    RelativeArea: 30
+    RelativeArea: 512
     TargetSymbols: 00000000010000000200000003000000
-  - Id: 6
-    Name: "\uC9C8\uBB38"
-    Rarity: 2
-    BaseRevenue: 3
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-  - Id: 10
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - others
+    - 3
+  - InstanceId: -1
+    Id: 10
     Name: "\uD68C\uB85C\uB3C4"
     Rarity: 0
     BaseRevenue: 1
@@ -77,7 +100,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 11
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 11
     Name: "\uC2E4\uD5D8"
     Rarity: 0
     BaseRevenue: 1
@@ -85,7 +111,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 12
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 12
     Name: "\uC7A5\uBE44"
     Rarity: 0
     BaseRevenue: 3
@@ -93,7 +122,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 13
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 13
     Name: "\uAE30\uC5B4"
     Rarity: 0
     BaseRevenue: 2
@@ -101,7 +133,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 14
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 14
     Name: "\uB80C\uC988"
     Rarity: 1
     BaseRevenue: 2
@@ -109,7 +144,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 15
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 15
     Name: "\uC18C\uD654\uAE30"
     Rarity: 1
     BaseRevenue: 1
@@ -117,7 +155,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 16
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 16
     Name: "\uC0AC\uACE0"
     Rarity: 2
     BaseRevenue: 1
@@ -125,7 +166,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 20
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 20
     Name: "\uC138\uD3EC"
     Rarity: 0
     BaseRevenue: 2
@@ -133,7 +177,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 21
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 21
     Name: "\uC950"
     Rarity: 0
     BaseRevenue: 2
@@ -141,7 +188,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 22
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 22
     Name: DNA
     Rarity: 1
     BaseRevenue: 2
@@ -149,7 +199,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 23
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 23
     Name: "\uD604\uBBF8\uACBD"
     Rarity: 1
     BaseRevenue: 1
@@ -157,7 +210,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 24
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 24
     Name: "\uC57D\uBB3C"
     Rarity: 1
     BaseRevenue: 1
@@ -165,7 +221,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 25
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 25
     Name: "\uB17C\uBB38"
     Rarity: 2
     BaseRevenue: 1
@@ -173,7 +232,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 26
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 26
     Name: "\uC758\uB300\uC0DD"
     Rarity: 3
     BaseRevenue: 3
@@ -181,7 +243,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 30
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 30
     Name: "\uBC88\uC5ED"
     Rarity: 0
     BaseRevenue: 1
@@ -189,7 +254,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 31
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 31
     Name: "\uAD7F\uC988"
     Rarity: 0
     BaseRevenue: 1
@@ -197,7 +265,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 32
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 32
     Name: "\uD55C\uC790"
     Rarity: 0
     BaseRevenue: 1
@@ -205,7 +276,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 33
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 33
     Name: "\uC0AC\uBB34\uB77C\uC774"
     Rarity: 1
     BaseRevenue: 1
@@ -213,7 +287,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 34
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 34
     Name: "\uAC8C\uC784\uAE30"
     Rarity: 1
     BaseRevenue: 3
@@ -221,7 +298,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 35
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 35
     Name: "\uC720\uD559\uC0DD"
     Rarity: 1
     BaseRevenue: 2
@@ -229,7 +309,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 36
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 36
     Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
     Rarity: 2
     BaseRevenue: 2
@@ -237,7 +320,10 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
-  - Id: 37
+    SpecialEffect: 
+    SpecialEffectParams: []
+  - InstanceId: -1
+    Id: 37
     Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
     Rarity: 3
     BaseRevenue: 1
@@ -245,3 +331,5 @@ MonoBehaviour:
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
+    SpecialEffect: 
+    SpecialEffectParams: []

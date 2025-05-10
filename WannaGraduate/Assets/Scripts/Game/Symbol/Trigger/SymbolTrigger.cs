@@ -7,7 +7,7 @@ using UnityEngine;
 public class TriggerParameter
 {
     // 현재 심볼의 그리드 상 위치
-    public Vector2Int SymbolIndex { get; set; }
+    public int CalendarIndex { get; set; }
 
     // 추가 데이터 (필요시 추가)
     //public Dictionary<string, object> Data { get; set; } = new Dictionary<string, object>();
@@ -19,5 +19,5 @@ public class TriggerParameter
 
 public interface ITrigger
 {
-    bool Evaluate(TriggerParameter parameter, ref List<Vector2Int> foundPositions);
+    bool Evaluate(TriggerParameter parameter, ref List<int> foundCalendarIds);
 }

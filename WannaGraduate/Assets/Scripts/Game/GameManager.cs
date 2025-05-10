@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     #region Private
     private void ExecuteEffectsForOrder(ItemOrder targetOrder, Action<int, CSVDataRow_ItemData> executeEffect)
     {
-        foreach (int itemId in PlayerSaveDataModel.data.ownedItems)
+        foreach (int itemId in PlayerSaveDataModel.data.ownedItems.Values)
         {
             CSVDataRow_ItemData itemData = CSVDataContainer_ItemData.GetItemData(itemId);
             if (itemData.Order == targetOrder)
@@ -102,24 +102,17 @@ public class GameManager : MonoBehaviour
 
     private void RandomizeCalendar()
     {
-        List<CSVDataRow_SymbolData> result = new(PlayerSaveDataModel.data.ownedSymbols);
+        PlayerSaveDataModel.data.calendarSIds = PlayerSaveDataModel.data.ownedSymbols.Keys.Select<int, int?>(x => x).ToList();
 
-        for (int i = result.Count; i < 20; i++)
+        for (int i = PlayerSaveDataModel.data.calendarSIds.Count; i < 20; i++)
         {
-            result.Add(new CSVDataRow_SymbolData());
+            PlayerSaveDataModel.data.calendarSIds.Add(null);
         }
 
         // shuffle list
         System.Random rand = new();
-        result = result.OrderBy(_ => rand.Next()).ToList();
-
-        PlayerSaveDataModel.data.calenderSymbols.Clear();
-
-        for (int y = 0; y < 4; y++) {
-            for (int x = 0; x < 5; x++) {
-                PlayerSaveDataModel.data.calenderSymbols.Add(new CalendarSymbol(result[y * 4 + x], new Vector2Int(y, x)));
-            }
-        }
+        PlayerSaveDataModel.data.calendarSIds = PlayerSaveDataModel.data.calendarSIds.OrderBy(_ => rand.Next()).ToList();
+        Debug.Log(PlayerSaveDataModel.data.calendarSIds.Count);
     }
 
 

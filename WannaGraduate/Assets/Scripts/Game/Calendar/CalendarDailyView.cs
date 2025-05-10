@@ -24,22 +24,14 @@ public class CalendarDailyView : UI_Base
     RP_Symbol symbolScript;
 
     // 심볼을 스핀합니다
-    public void RollSymbol(int calendarId, Action onDailyDirectionEnd, Action<IEnumerator> bindSpecialEffect)
+    public void RollSymbol(int calendarId, Action onDailyDirectionEnd)
     {
         this.calendarId = calendarId;
-        this.symbolId = PlayerSaveDataModel.data.calenderSymbols[calendarId].Data.Id;
+        this.symbolId = PlayerSaveDataModel.data.GetSymbolIdFromCalendar(calendarId);
         this.onDailyDirectionEnd = onDailyDirectionEnd;
-        this.bindSpecialEffect = bindSpecialEffect;
 
         // 심볼 초기화
         InitSymbol();
-
-        //심볼 트리거 체크
-        if (CheckTrigger(out List<Vector2Int> foundPositions))
-        {
-            // 심볼 특수 효과 (RP_Symbol_Id)
-
-        }
 
         StartCoroutine(RollSymbolDirection());
     }
@@ -95,62 +87,6 @@ public class CalendarDailyView : UI_Base
         GetComponent<StatSystem>().ClearBuffsAll();
         var csvData = CSVDataContainer_SymbolData.GetSymbolData(this.symbolId);
         GetComponent<StatSystem>().AddBuff(EStatTypes.EarnRP, EStatCalcTypes.Constant, csvData.BaseRevenue);
-
-
-        // 심볼 효과 스크립트 로드
-        Type type = Type.GetType("RP_Symbol_" + this.symbolId + ", Assembly-CSharp");
-
-        if (type == null)
-        {
-            type = Type.GetType("RP_Symbol, Assembly-CSharp");
-        }
-
-        symbolScript = (RP_Symbol)gameObject.AddComponent(type);
-        this.bindSpecialEffect?.Invoke(symbolScript.SpecialEffect(null));
-    }
-
-    private bool CheckTrigger(out List<Vector2Int> foundPositions)
-    {
-        foundPositions = new List<Vector2Int>();
-
-        if (this.symbolId == -1)
-        {
-            return false;
-        }
-
-
-        // 심볼 트리거 타입 및 파라미터 데이터 로드
-        var csvData = CSVDataContainer_SymbolData.GetSymbolData(this.symbolId);
-
-        // 트리거 스크립트 로드
-        Type type = Type.GetType(csvData.Trigger + ", Assembly-CSharp");
-
-        if (type == null)
-        {
-            Debug.LogError($"Invalid trigger type for id={this.symbolId}");
-            return false;
-        }
-
-        // 트리거 객체 생성
-        var trigger = (ITrigger)Activator.CreateInstance(type);
-
-        // 트리거 파라미터 생성
-        var triggerParameter = new TriggerParameter
-        {
-            SymbolIndex = new Vector2Int(calendarId / 5, calendarId % 5),
-            RelativeArea = csvData.RelativeArea,
-            //AbsoluteArea = csvData.AbsoluteArea,
-            TargetSymbols = csvData.TargetSymbols.ToList(),
-        };
-
-        if (trigger.Evaluate(triggerParameter, ref foundPositions))
-        {
-            Debug.Log($"Trigger={type.Name}: return true");
-            return true;
-        }
-
-        Debug.Log($"Trigger={type.Name}: return false");
-        return false;
     }
 
     private void UpdateView(int symbolId)
@@ -174,7 +110,7 @@ public class CalendarDailyView : UI_Base
     IEnumerator RollSymbolDirection()
     {
         int randIdx = 0;
-        CSVDataRow_SymbolData symbolData;
+        int symbolId;
 
         int randImageCount = Random.Range(5, 15);
         icon.gameObject.SetActive(true);
@@ -182,8 +118,9 @@ public class CalendarDailyView : UI_Base
         for (int i = 0; i < randImageCount; i++)
         {
             randIdx = Random.Range(0, PlayerSaveDataModel.data.ownedSymbols.Count);
-            symbolData = PlayerSaveDataModel.data.ownedSymbols[randIdx];
-            icon.sprite = ResourcesCache.GetSymbolSprite(symbolData.Id);
+            symbolId = PlayerSaveDataModel.data.ownedSymbols.Values.ToList()[randIdx];
+            var symbolData = CSVDataContainer_SymbolData.GetSymbolData(symbolId);
+            icon.sprite = ResourcesCache.GetSymbolSprite(symbolId);
             backgroundImage.sprite = ResourcesCache.symbolBackgroundSprites[symbolData.Rarity];
 
             yield return null;

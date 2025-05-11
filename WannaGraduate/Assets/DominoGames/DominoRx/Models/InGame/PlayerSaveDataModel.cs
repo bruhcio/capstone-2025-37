@@ -82,9 +82,4 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
     {
         ownedItems.Remove(sid);
     }
-
-    public void UpdateData()
-    {
-        
-    }
 }

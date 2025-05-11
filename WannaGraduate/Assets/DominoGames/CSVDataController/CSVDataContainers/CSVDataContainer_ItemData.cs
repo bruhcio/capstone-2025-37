@@ -36,12 +36,10 @@ namespace BBB.CSVData
     }
 
     // 아이템 발동 시점
-    public enum ItemOrder
+    public enum ItemType
     {
-        TurnStart,
-        PreSymbol,
-        PostSymbol,
-        TurnEnd,
+        AlwaysOn,
+        TurnEnd
     }
 
     [System.Serializable]
@@ -50,7 +48,7 @@ namespace BBB.CSVData
         public int Id;
         public string Name;
         public int Rarity;
-        public ItemOrder Order;
-        public int Remain;
+        public int Appearance;
+        public ItemType Type;
     }
 }

@@ -26,60 +26,14 @@ public class GameManager : MonoBehaviour
         calendarView.RollCalendar();
     }
 
-    // 턴 시작 시점 아이템 효과 (예: 선 효과 실행)
-    public void OnTurnStart()
-    {
-    }
-
-    // 심볼 효과 적용 전에 발동하는 아이템 효과 (예: 선 효과 실행)
-    public void OnPreSymbol()
-    {
-        ExecuteEffectsForOrder(ItemOrder.PreSymbol, (itemId, itemData) =>
-        {
-            ExecuteItemEffect(itemData, PlayerSaveDataModel.data, itemId, effect =>
-            {
-                effect.ExecutePreSymbol(PlayerSaveDataModel.data, itemId);
-            });
-        });
-    }
-
-    // 심볼 효과 적용 후 발동하는 아이템 효과 (예: 후 효과 실행)
-    public void OnPostSymbol()
-    {
-        ExecuteEffectsForOrder(ItemOrder.PostSymbol, (itemId, itemData) =>
-        {
-            ExecuteItemEffect(itemData, PlayerSaveDataModel.data, itemId, effect =>
-            {
-                effect.ExecutePreSymbol(PlayerSaveDataModel.data, itemId);
-            });
-        });
-    }
-
-    // 턴 종료 시점 아이템 효과 (예: 후 효과 실행)
-    public void OnTurnEnd()
-    {
-
-    }
-
     #endregion
 
 
     #region Private
-    private void ExecuteEffectsForOrder(ItemOrder targetOrder, Action<int, CSVDataRow_ItemData> executeEffect)
-    {
-        foreach (int itemId in PlayerSaveDataModel.data.ownedItems.Values)
-        {
-            CSVDataRow_ItemData itemData = CSVDataContainer_ItemData.GetItemData(itemId);
-            if (itemData.Order == targetOrder)
-            {
-                executeEffect?.Invoke(itemId, itemData);
-            }
-        }
-    }
 
-    public void ExecuteItemEffect(CSVDataRow_ItemData itemData, PlayerSaveDataModel playerData, int itemId, Action<IItemEffect> effectAction)
+    public void ExecuteItemEffect(CSVDataRow_ItemData itemData, PlayerSaveDataModel playerData, Action<IItemEffect> effectAction)
     {
-        string typeName = "Item_" + itemData.Name;  // 예: "Item_IncreaseResearchPointEffect"
+        string typeName = "Item_" + itemData.Id;  // 예: "Item_IncreaseResearchPointEffect"
         string assemblyQualifiedName = $"{typeName}, Assembly-CSharp"; // 어셈블리 이름은 프로젝트에 맞게 조정
 
         // 리플렉션으로 효과 타입을 가져옵니다.

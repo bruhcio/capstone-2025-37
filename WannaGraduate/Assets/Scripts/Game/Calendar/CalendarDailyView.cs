@@ -73,6 +73,11 @@ public class CalendarDailyView : UI_Base
         RPEarnTextEffect.Instantiate(gameObject, GetBaseRevenue());
     }
 
+    public int GetSymbolId()
+    {
+        return this.symbolId;
+    }
+
 
     // 심볼 초기화 작업
     private void InitSymbol()

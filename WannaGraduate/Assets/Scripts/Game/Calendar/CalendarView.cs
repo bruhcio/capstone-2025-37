@@ -29,6 +29,10 @@ public class CalendarView : UI_Base
     {
         return dayObjects[gridPosition.y * 4 + gridPosition.x];
     }
+    public CalendarDailyView GetDailyView(int y, int x)
+    {
+        return dayObjects[y * 4 + x];
+    }
 
 
 

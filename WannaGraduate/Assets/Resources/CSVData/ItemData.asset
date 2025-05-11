@@ -14,32 +14,132 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Items:
   - Id: 0
-    Name: Test0
+    Name: GPU
     Rarity: 0
     Order: 0
-    Remain: 5
+    Remain: 0
   - Id: 1
-    Name: Test1
-    Rarity: 0
-    Order: 1
-    Remain: -1
+    Name: "\uC54C\uACE0\uB9AC\uC998"
+    Rarity: 1
+    Order: 0
+    Remain: 0
   - Id: 2
-    Name: Test2
-    Rarity: 1
-    Order: 2
-    Remain: 3
+    Name: "\uC9C8\uBB38"
+    Rarity: 0
+    Order: 0
+    Remain: 0
   - Id: 3
-    Name: Test3
-    Rarity: 1
-    Order: 3
-    Remain: -1
-  - Id: 4
-    Name: Test4
+    Name: VPN
     Rarity: 2
-    Order: 2
-    Remain: 2
+    Order: 0
+    Remain: 0
+  - Id: 4
+    Name: "\uC804\uB958"
+    Rarity: 0
+    Order: 0
+    Remain: 0
   - Id: 5
-    Name: Test5
+    Name: "\uBA40\uD2F0\uD0ED"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 6
+    Name: "LED\uC804\uAD6C"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 7
+    Name: "\uC758\uB300\uCD94\uCC9C\uC11C"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 8
+    Name: "\uC870\uC5B8\uC11C"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 9
+    Name: "\uBCF4\uACE0\uC11C(\uC2E4\uD5D8)"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 10
+    Name: "\uB85C\uB610"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 11
+    Name: "\uD2B9\uD5C8"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 12
+    Name: "\uB17C\uB780"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 13
+    Name: "\uBC15\uBB3C\uAD00"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 14
+    Name: "\uC5F0\uB300 \uCE21\uC815\uAE30"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 15
+    Name: "\uBC9A\uAF43"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 16
+    Name: "\uCF00\uB9AC\uC5B4"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 17
+    Name: "\uC628\uCC9C\uC5EC\uD589"
+    Rarity: 2
+    Order: 0
+    Remain: 0
+  - Id: 18
+    Name: "\uACF5\uBAA8\uC804"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 19
+    Name: "\uCE74\uBA54\uB77C"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 20
+    Name: "\uADF9\uC7A5"
+    Rarity: 2
+    Order: 0
+    Remain: 0
+  - Id: 21
+    Name: "\uCD08\uCCAD\uC7A5"
     Rarity: 3
-    Order: 1
-    Remain: -1
+    Order: 0
+    Remain: 0
+  - Id: 22
+    Name: "\uB9C8\uC774\uD06C"
+    Rarity: 0
+    Order: 0
+    Remain: 0
+  - Id: 23
+    Name: "\uC720\uD29C\uBE0C"
+    Rarity: 1
+    Order: 0
+    Remain: 0
+  - Id: 24
+    Name: "\uC575\uCF5C"
+    Rarity: 3
+    Order: 0
+    Remain: 0
+  - Id: 25
+    Name: "\uC791\uACE1 \uC18C\uD504\uD2B8\uC6E8\uC5B4"
+    Rarity: 2
+    Order: 0
+    Remain: 0

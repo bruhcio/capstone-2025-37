@@ -19,6 +19,12 @@ public class SymbolItemTextMaker : MonoBehaviour
 
     // 태그 추출용 정규식
     private static readonly Regex tagRegex = new Regex(@"<(?<type>symbol|item)=(?<value>\d+)>");
+    private static readonly Regex colorTagRegex = new Regex(@"<color=.*?>|</color>", RegexOptions.IgnoreCase);
+
+    public static string RemoveColorTags(string input)
+    {
+        return colorTagRegex.Replace(input, "");
+    }
 
 
     [Button]
@@ -51,7 +57,15 @@ public class SymbolItemTextMaker : MonoBehaviour
         targetText.text = tmpText;
         int tagIndex = 0;
 
-        targetText.ForceMeshUpdate();
+        targetText.ForceMeshUpdate(true, true);
+
+        if(extracted.Count == 0)
+        {
+            return;
+        }
+
+        tmpText = RemoveColorTags(tmpText);
+        Debug.Log(tmpText);
 
         // <symbol=1> 또는 <symbol=3> 매 턴 1개 제거 <symbol=3> +2 asdfsaf <symbol=0>
 
@@ -103,6 +117,8 @@ public class SymbolItemTextMaker : MonoBehaviour
 
         TMP_CharacterInfo charInfo = textInfo.characterInfo[charIndex];
         Vector3 localPos = (charInfo.bottomLeft + charInfo.topRight) / 2f;
+
+        Debug.Log(localPos);
 
         return tmp.transform.TransformPoint(localPos);
     }

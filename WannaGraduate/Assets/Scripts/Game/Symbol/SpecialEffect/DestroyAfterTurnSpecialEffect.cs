@@ -6,9 +6,11 @@ public class DestroyAfterTurnSpecialEffect : ISymbolSpecialEffect
 {
     public void Evaluate(List<string> parameter, int selfCalendarIdx, List<int> interactingCalendarIdx)
     {
-        int destroyTurn = (int)SpecialEffectBlackBoard.GetSymbolEffectData(selfCalendarIdx, int.Parse(parameter[0]));
+        int destroyTurn = (int)SpecialEffectBlackBoard.GetSymbolEffectData((int)PlayerSaveDataModel.data.calendarSIds[selfCalendarIdx], int.Parse(parameter[0]));
 
         destroyTurn--;
+
+        SpecialEffectBlackBoard.SetSymbolEffectData((int)PlayerSaveDataModel.data.calendarSIds[selfCalendarIdx], destroyTurn);
 
         if(destroyTurn <= 0)
         {

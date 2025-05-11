@@ -43,7 +43,7 @@ namespace DominoGames.Util
             if (targetProperty == null || !prefabs.ContainsKey(targetProperty.pooledPath))
             {
                 // 관리되는 오브젝트가 아님
-                GameObject.Destroy(obj);
+                GameObject.DestroyImmediate(obj);
                 return;
             }
 

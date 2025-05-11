@@ -27,7 +27,6 @@ public class SymbolSelectPanel : UI_Base
         specialEffectText.text = LocalizationManager.GetTermTranslation("SymbolEffect." + targetSymbolId);
 
         SymbolItemTextMaker.ProcessString(specialEffectText.text, specialEffectText);
-        Debug.Log(specialEffectText.text);
 
         GetComponent<Image>().color = panelColors[symbolData.Rarity];
     }

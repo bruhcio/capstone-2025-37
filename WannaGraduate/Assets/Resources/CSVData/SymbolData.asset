@@ -133,20 +133,6 @@ MonoBehaviour:
     EvolvingDuration: 0
   - InstanceId: -1
     Id: 12
-    Name: "\uC7A5\uBE44"
-    Rarity: 0
-    BaseRevenue: 3
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 13
     Name: "\uAE30\uC5B4"
     Rarity: 0
     BaseRevenue: 2
@@ -160,7 +146,7 @@ MonoBehaviour:
     EvolvingTarget: 
     EvolvingDuration: 0
   - InstanceId: -1
-    Id: 14
+    Id: 13
     Name: "\uB80C\uC988"
     Rarity: 1
     BaseRevenue: 2
@@ -174,7 +160,7 @@ MonoBehaviour:
     EvolvingTarget: 
     EvolvingDuration: 0
   - InstanceId: -1
-    Id: 15
+    Id: 14
     Name: "\uC18C\uD654\uAE30"
     Rarity: 1
     BaseRevenue: 1
@@ -188,7 +174,7 @@ MonoBehaviour:
     EvolvingTarget: 
     EvolvingDuration: 0
   - InstanceId: -1
-    Id: 16
+    Id: 15
     Name: "\uC0AC\uACE0"
     Rarity: 2
     BaseRevenue: 1
@@ -291,118 +277,6 @@ MonoBehaviour:
     Rarity: 3
     BaseRevenue: 3
     Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 30
-    Name: "\uBC88\uC5ED"
-    Rarity: 0
-    BaseRevenue: 1
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 31
-    Name: "\uAD7F\uC988"
-    Rarity: 0
-    BaseRevenue: 1
-    Remain: 4
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 32
-    Name: "\uD55C\uC790"
-    Rarity: 0
-    BaseRevenue: 1
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 33
-    Name: "\uC0AC\uBB34\uB77C\uC774"
-    Rarity: 1
-    BaseRevenue: 1
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 34
-    Name: "\uAC8C\uC784\uAE30"
-    Rarity: 1
-    BaseRevenue: 3
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 35
-    Name: "\uC720\uD559\uC0DD"
-    Rarity: 1
-    BaseRevenue: 2
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 36
-    Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
-    Rarity: 2
-    BaseRevenue: 2
-    Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
-    OnDestroyRP: 0
-    EvolvingTarget: 
-    EvolvingDuration: 0
-  - InstanceId: -1
-    Id: 37
-    Name: "\uC804\uC124\uC758 \uCE90\uB9AD\uD130"
-    Rarity: 3
-    BaseRevenue: 1
-    Remain: 5
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 

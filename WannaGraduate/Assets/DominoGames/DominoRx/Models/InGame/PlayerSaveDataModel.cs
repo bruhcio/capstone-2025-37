@@ -38,6 +38,12 @@ public class PlayerSaveDataModel : RxDataModel<PlayerSaveDataModel>, IRxDataMode
         }
     }
 
+    public void AddResearchPoint(int adder, GameObject effectTarget)
+    {
+        researchPoint += adder;
+        RPEarnTextEffect.Instantiate(effectTarget, adder);
+    }
+
     // calendarIndex -> symbol instance id (sid) -> ownedSymbols Á¢±Ù
     public int GetSymbolIdFromCalendar(int calendarId)
     {

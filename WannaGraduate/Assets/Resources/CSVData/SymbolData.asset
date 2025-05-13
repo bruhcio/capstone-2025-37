@@ -107,7 +107,7 @@ MonoBehaviour:
     Id: 10
     Name: "\uD68C\uB85C\uB3C4"
     Rarity: 0
-    BaseRevenue: 1
+    BaseRevenue: 2
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
     EvolvingDuration: 0
   - InstanceId: -1
     Id: 11
-    Name: "\uC2E4\uD5D8"
+    Name: "\uC2E4\uD5D8\uC7A5\uBE44"
     Rarity: 0
     BaseRevenue: 1
     Remain: -1
@@ -137,11 +137,12 @@ MonoBehaviour:
     Rarity: 0
     BaseRevenue: 2
     Remain: 1
-    Trigger: 
+    Trigger: AlwaysActiveTrigger
     RelativeArea: 0
     TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
+    SpecialEffect: DestroyAfterTurnSpecialEffect
+    SpecialEffectParams:
+    - 4
     OnDestroyRP: 0
     EvolvingTarget: 
     EvolvingDuration: 0
@@ -149,7 +150,7 @@ MonoBehaviour:
     Id: 13
     Name: "\uB80C\uC988"
     Rarity: 1
-    BaseRevenue: 2
+    BaseRevenue: 0
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -177,21 +178,21 @@ MonoBehaviour:
     Id: 15
     Name: "\uC0AC\uACE0"
     Rarity: 2
-    BaseRevenue: 1
+    BaseRevenue: 2
     Remain: -1
     Trigger: 
     RelativeArea: 0
     TargetSymbols: 
     SpecialEffect: 
     SpecialEffectParams: []
-    OnDestroyRP: 0
+    OnDestroyRP: 2
     EvolvingTarget: 
     EvolvingDuration: 0
   - InstanceId: -1
     Id: 20
     Name: "\uC138\uD3EC"
     Rarity: 0
-    BaseRevenue: 2
+    BaseRevenue: 1
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -205,7 +206,7 @@ MonoBehaviour:
     Id: 21
     Name: "\uC950"
     Rarity: 0
-    BaseRevenue: 2
+    BaseRevenue: 1
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -219,7 +220,7 @@ MonoBehaviour:
     Id: 22
     Name: DNA
     Rarity: 1
-    BaseRevenue: 2
+    BaseRevenue: 0
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -233,13 +234,15 @@ MonoBehaviour:
     Id: 23
     Name: "\uD604\uBBF8\uACBD"
     Rarity: 1
-    BaseRevenue: 1
+    BaseRevenue: 0
     Remain: -1
-    Trigger: 
-    RelativeArea: 0
-    TargetSymbols: 
-    SpecialEffect: 
-    SpecialEffectParams: []
+    Trigger: RelativeGridScanTrigger
+    RelativeArea: 480
+    TargetSymbols: 14000000
+    SpecialEffect: AddResearchPointSpecialEffect
+    SpecialEffectParams:
+    - others
+    - 2
     OnDestroyRP: 0
     EvolvingTarget: 
     EvolvingDuration: 0
@@ -247,7 +250,7 @@ MonoBehaviour:
     Id: 24
     Name: "\uC57D\uBB3C"
     Rarity: 1
-    BaseRevenue: 1
+    BaseRevenue: 0
     Remain: -1
     Trigger: 
     RelativeArea: 0
@@ -261,7 +264,7 @@ MonoBehaviour:
     Id: 25
     Name: "\uB17C\uBB38"
     Rarity: 2
-    BaseRevenue: 1
+    BaseRevenue: 7
     Remain: 3
     Trigger: 
     RelativeArea: 0
@@ -273,9 +276,9 @@ MonoBehaviour:
     EvolvingDuration: 0
   - InstanceId: -1
     Id: 26
-    Name: "\uC758\uB300\uC0DD"
+    Name: "\uC720\uC804\uC790 \uC870\uC791 \uC950"
     Rarity: 3
-    BaseRevenue: 3
+    BaseRevenue: 5
     Remain: -1
     Trigger: 
     RelativeArea: 0

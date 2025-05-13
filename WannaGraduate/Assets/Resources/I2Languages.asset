@@ -46,8 +46,7 @@ MonoBehaviour:
       Description: 
       Languages:
       - "<symbol=4> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=0>
-        1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=48> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
-        \uB0B4 \uC874\uC7AC \uC2DC 10% \uD655\uB960\uB85C <symbol=10000> +2"
+        1\uAC1C\uB2F9 <symbol=10000> +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -63,8 +62,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "3\uD134 \uD6C4 \uD30C\uAD34 \uC2DC <symbol=10000> +5  \r\n3\uAC1C \uC774\uC0C1
-        \uC874\uC7AC \uC2DC <symbol=0> 1\uAC1C\uB2F9 <symbol=10000> \xD72"
+      - "3\uD134 \uD6C4 \uD30C\uAD34 \uC2DC <symbol=10000> +5  \n3\uAC1C \uC774\uC0C1
+        \uC874\uC7AC \uC2DC <item=\uC54C\uACE0\uB9AC\uC998> 1\uAC1C\uB2F9 <symbol=10000>
+        \xD72"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -80,8 +80,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=2> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=2>
-        \uD30C\uAD34, 1\uAC1C\uB2F9 <symbol=10000> +5"
+      - "<item=\uC9C8\uBB38> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <item=\uC9C8\uBB38> \uD30C\uAD34, 1\uAC1C\uB2F9 <symbol=10000> +5"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -97,9 +97,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "3\uD134 \uD6C4 \uD30C\uAD34\uB428  \r\n<symbol=25> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=25> 1\uAC1C\uB2F9 <symbol=10000>
-        +2"
+      - "3\uD134 \uD6C4 \uD30C\uAD34\uB428"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -116,8 +114,8 @@ MonoBehaviour:
       Description: 
       Languages:
       - "<symbol=0> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9
-        <color=#00FFFF><symbol=10000> +2</color>\n<symbol=6> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1\n\n"
+        <color=#00FFFF><symbol=10000> +2</color>\n<symbol=10> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -133,9 +131,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=0> \uC778\uC811 \uC2DC \uC791\uB3D9 \uBD88\uAC00\n<symbol=VPN> \uC874\uC7AC
-        \uC2DC \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\n\uD30C\uAD34 \uC2DC <color=#00FFFF><symbol=10000>
-        +2</color>"
+      - "<symbol=0> \uC778\uC811 \uC2DC \uCF54\uB4DC \uC791\uB3D9 \uBD88\uAC00\n<item=VPN>
+        \uC874\uC7AC \uC2DC \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\n\uBCF8 \uC77C\uC815
+        \uD30C\uAD34 \uC2DC <color=#00FFFF><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -151,9 +149,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=10> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
-        1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=25> \uC0C1\uD558\uC88C\uC6B0 1\uCE78
-        \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
+      - "<symbol=12> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        1\uAC1C\uB2F9 <symbol=10000> +2"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -169,10 +166,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=9> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9
-        <symbol=10000> +3  \n<symbol=20> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
-        \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +2  \n<symbol=26> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 1\uAC1C\uB2F9 <symbol=10000> +1"
+      - "<symbol=13> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        1\uAC1C\uB2F9 <symbol=10000> +3"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -188,11 +183,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB9E4 \uD134 <symbol=10000> +2  \r\n4\uD134 \uD6C4 \uD30C\uAD34\uB428 
-        \r\n<symbol=6> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
-        <symbol=6> 1\uAC1C\uB2F9 <symbol=10000> +2  \r\n<symbol=35> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 10% \uD655\uB960\uB85C <symbol=10000>
-        +2"
+      - "4\uD134 \uD6C4 \uD30C\uAD34\uB428  \n<symbol=10> \uC0C1\uD558\uC88C\uC6B0
+        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <symbol=6> 1\uAC1C\uB2F9 <symbol=10000>
+        +2  "
       - 
       Flags: 0000
       Languages_Touch: []
@@ -208,9 +201,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=7> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
-        +1</color>\n<symbol=\uC804\uB958> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
-        \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000> +5</color>"
+      - 
       - 
       Flags: 0000
       Languages_Touch: []
@@ -226,9 +217,10 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=8> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uC0AC\uACE0
-        \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\uD654\n\uC0AC\uACE0 \uD30C\uAD34 \uC2DC
-        <color=#00FFFF><symbol=10000> +2</color>"
+      - "<symbol=15> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=15>\uC758 [<symbol=11> \uB610\uB294 <symbol=10> \uD30C\uAD34] \uD6A8\uACFC
+        \uBB34\uD6A8\uD654 \uBC0F <symbol=15> \uD30C\uAD34 <color=#00FFFF><symbol=10000>
+        +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -244,10 +236,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB9E4 \uD134 <color=green><symbol=10000> +2</color>\n20% \uD655\uB960\uB85C
-        <symbol=6> \uB610\uB294 <symbol=7> \uD30C\uAD34\n<symbol=11> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uBD80\uC815\uD6A8\uACFC \uBB34\uD6A8\n\uC0AC\uACE0
-        \uD30C\uAD34 \uC2DC <color=green><symbol=10000> +2</color>"
+      - "20% \uD655\uB960\uB85C <symbol=11> \uB610\uB294 <symbol=10> \uD30C\uAD34\n\uBCF8
+        \uC77C\uC815 \uD30C\uAD34 \uC2DC <color=green><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -263,11 +253,9 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB9E4 \uD134 <symbol=10000> +1  \r\n<symbol=15> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC \uB9E4\uD134 30% \uD655\uB960\uB85C \uC9C4\uD654
-        (\u2192 <symbol=18>)  \r\n<symbol=44> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4
-        \uC874\uC7AC \uC2DC <symbol=10000> +2  \r\n<symbol=16> \uC874\uC7AC \uC2DC
-        \uC9C4\uD654 \uD655\uB960 +20%"
+      - "<symbol=22> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        \uB9E4\uD134 30% \uD655\uB960\uB85C \uC9C4\uD654 (\u2192 <symbol=25>) \n<symbol=23>
+        \uC874\uC7AC \uC2DC \uC9C4\uD654 \uD655\uB960 +20%"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -283,15 +271,12 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB9E4 \uD134 <symbol=10000> +1  \r\n10\uD134 \uC774\uC0C1 \uC0DD\uC874
-        \uC2DC <symbol=14>\uB85C \uC9C4\uD654 (\uC720\uC804\uC790 \uC870\uC791 \uC950,
-        \uD134\uB2F9 <symbol=10000> +5)  \r\n<symbol=47> \uC0C1\uD558\uC88C\uC6B0
-        1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC 55% \uD655\uB960\uB85C <symbol=10000>
-        +3"
+      - "10\uD134 \uC774\uC0C1 \uC0DD\uC874 \uC2DC <symbol=26>\uB85C \uC9C4\uD654
+        (\uC720\uC804\uC790 \uC870\uC791 \uC950, \uD134\uB2F9 <symbol=10000> +5)"
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: SymbolName.27
+    - Term: SymbolName.26
       TermType: 0
       Description: 
       Languages:
@@ -299,7 +284,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: SymbolEffect.27
+    - Term: SymbolEffect.26
       TermType: 0
       Description: 
       Languages:
@@ -319,8 +304,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<color=#00FFFF><symbol=12> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
-        \uC2DC \uD574\uB2F9 \uC138\uD3EC \uB9E4\uD134 30% \uD655\uB960\uB85C <symbol=18>\uB85C
+      - "<color=#00FFFF><symbol=20> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC
+        \uC2DC <symbol=20> \uB9E4\uD134 30% \uD655\uB960\uB85C <symbol=25>\uB85C
         \uC9C4\uD654 \uAC00\uB2A5</color>"
       - 
       Flags: 0000
@@ -337,10 +322,8 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "<symbol=12> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
-        \uC138\uD3EC 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>\n<symbol=40>
-        \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC <color=#00FFFF><symbol=10000>
-        +1</color>"
+      - "<symbol=20> \uC0C1\uD558\uC88C\uC6B0 1\uCE78 \uB0B4 \uC874\uC7AC \uC2DC
+        <symbol=20> 1\uAC1C\uB2F9 <color=#00FFFF><symbol=10000> +2</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -373,9 +356,7 @@ MonoBehaviour:
       TermType: 0
       Description: 
       Languages:
-      - "\uB9E4 \uD134 <color=green><symbol=10000> +7</color>\n<symbol=\uC758\uB300\uCD94\uCC9C\uC11C>
-        \uBCF4\uC720 \uC2DC \uB9E4 \uD134 \uCD94\uAC00\uB85C <color=green><symbol=10000>
-        +5</color>"
+      - "\uB9E4 \uD134 <color=green><symbol=10000> +7</color>"
       - 
       Flags: 0000
       Languages_Touch: []
@@ -623,7 +604,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.0
+    - Term: ItemName.1
       TermType: 0
       Description: 
       Languages:
@@ -631,7 +612,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.0
+    - Term: ItemEffect.1
       TermType: 0
       Description: 
       Languages:
@@ -640,7 +621,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.1
+    - Term: ItemName.2
       TermType: 0
       Description: 
       Languages:
@@ -648,7 +629,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.1
+    - Term: ItemEffect.2
       TermType: 0
       Description: 
       Languages:
@@ -657,7 +638,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.2
+    - Term: ItemName.3
       TermType: 0
       Description: 
       Languages:
@@ -665,7 +646,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.2
+    - Term: ItemEffect.3
       TermType: 0
       Description: 
       Languages:
@@ -673,7 +654,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.3
+    - Term: ItemName.4
       TermType: 0
       Description: 
       Languages:
@@ -681,7 +662,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.3
+    - Term: ItemEffect.4
       TermType: 0
       Description: 
       Languages:
@@ -690,7 +671,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.4
+    - Term: ItemName.5
       TermType: 0
       Description: 
       Languages:
@@ -698,7 +679,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.4
+    - Term: ItemEffect.5
       TermType: 0
       Description: 
       Languages:
@@ -706,7 +687,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.5
+    - Term: ItemName.6
       TermType: 0
       Description: 
       Languages:
@@ -714,7 +695,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.5
+    - Term: ItemEffect.6
       TermType: 0
       Description: 
       Languages:
@@ -723,7 +704,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.6
+    - Term: ItemName.7
       TermType: 0
       Description: 
       Languages:
@@ -731,7 +712,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.6
+    - Term: ItemEffect.7
       TermType: 0
       Description: 
       Languages:
@@ -740,7 +721,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.7
+    - Term: ItemName.8
       TermType: 0
       Description: 
       Languages:
@@ -748,7 +729,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.7
+    - Term: ItemEffect.8
       TermType: 0
       Description: 
       Languages:
@@ -756,7 +737,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.8
+    - Term: ItemName.9
       TermType: 0
       Description: 
       Languages:
@@ -764,7 +745,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.8
+    - Term: ItemEffect.9
       TermType: 0
       Description: 
       Languages:
@@ -772,7 +753,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.9
+    - Term: ItemName.10
       TermType: 0
       Description: 
       Languages:
@@ -780,7 +761,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.9
+    - Term: ItemEffect.10
       TermType: 0
       Description: 
       Languages:
@@ -788,7 +769,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.10
+    - Term: ItemName.11
       TermType: 0
       Description: 
       Languages:
@@ -796,7 +777,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.10
+    - Term: ItemEffect.11
       TermType: 0
       Description: 
       Languages:
@@ -804,7 +785,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.11
+    - Term: ItemName.12
       TermType: 0
       Description: 
       Languages:
@@ -812,7 +793,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.11
+    - Term: ItemEffect.12
       TermType: 0
       Description: 
       Languages:
@@ -821,7 +802,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.12
+    - Term: ItemName.13
       TermType: 0
       Description: 
       Languages:
@@ -829,7 +810,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.12
+    - Term: ItemEffect.13
       TermType: 0
       Description: 
       Languages:
@@ -837,7 +818,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.13
+    - Term: ItemName.14
       TermType: 0
       Description: 
       Languages:
@@ -845,7 +826,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.13
+    - Term: ItemEffect.14
       TermType: 0
       Description: 
       Languages:
@@ -854,7 +835,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.14
+    - Term: ItemName.15
       TermType: 0
       Description: 
       Languages:
@@ -862,7 +843,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.14
+    - Term: ItemEffect.15
       TermType: 0
       Description: 
       Languages:
@@ -871,7 +852,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.15
+    - Term: ItemName.16
       TermType: 0
       Description: 
       Languages:
@@ -879,7 +860,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.15
+    - Term: ItemEffect.16
       TermType: 0
       Description: 
       Languages:
@@ -888,7 +869,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.16
+    - Term: ItemName.17
       TermType: 0
       Description: 
       Languages:
@@ -896,7 +877,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.16
+    - Term: ItemEffect.17
       TermType: 0
       Description: 
       Languages:
@@ -904,7 +885,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.17
+    - Term: ItemName.18
       TermType: 0
       Description: 
       Languages:
@@ -912,7 +893,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.17
+    - Term: ItemEffect.18
       TermType: 0
       Description: 
       Languages:
@@ -921,7 +902,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.18
+    - Term: ItemName.19
       TermType: 0
       Description: 
       Languages:
@@ -929,7 +910,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.18
+    - Term: ItemEffect.19
       TermType: 0
       Description: 
       Languages:
@@ -938,7 +919,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.19
+    - Term: ItemName.20
       TermType: 0
       Description: 
       Languages:
@@ -946,7 +927,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.19
+    - Term: ItemEffect.20
       TermType: 0
       Description: 
       Languages:
@@ -954,7 +935,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.20
+    - Term: ItemName.21
       TermType: 0
       Description: 
       Languages:
@@ -962,7 +943,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.20
+    - Term: ItemEffect.21
       TermType: 0
       Description: 
       Languages:
@@ -971,7 +952,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.21
+    - Term: ItemName.22
       TermType: 0
       Description: 
       Languages:
@@ -979,7 +960,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.21
+    - Term: ItemEffect.22
       TermType: 0
       Description: 
       Languages:
@@ -989,7 +970,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.22
+    - Term: ItemName.23
       TermType: 0
       Description: 
       Languages:
@@ -997,7 +978,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.22
+    - Term: ItemEffect.23
       TermType: 0
       Description: 
       Languages:
@@ -1005,7 +986,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.23
+    - Term: ItemName.24
       TermType: 0
       Description: 
       Languages:
@@ -1013,7 +994,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.23
+    - Term: ItemEffect.24
       TermType: 0
       Description: 
       Languages:
@@ -1022,7 +1003,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.24
+    - Term: ItemName.25
       TermType: 0
       Description: 
       Languages:
@@ -1030,7 +1011,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.24
+    - Term: ItemEffect.25
       TermType: 0
       Description: 
       Languages:
@@ -1038,7 +1019,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemName.25
+    - Term: ItemName.26
       TermType: 0
       Description: 
       Languages:
@@ -1046,7 +1027,7 @@ MonoBehaviour:
       - 
       Flags: 0000
       Languages_Touch: []
-    - Term: ItemEffect.25
+    - Term: ItemEffect.26
       TermType: 0
       Description: 
       Languages:
@@ -1101,7 +1082,7 @@ MonoBehaviour:
     Google_WebServiceURL: https://script.google.com/macros/s/AKfycbw79-Z8c3g-2IA_vQY_yt6jKtCOwahV6uvHjIwzCc9w_DvOIyfBmH_RIsNXgbhkTFvX/exec
     Google_SpreadsheetKey: 1bFkHzzyKTUl6Q5aeIRYgWFCbpiKTDneGCl7vMHBoM-k
     Google_SpreadsheetName: I2Loc WannaGraduate Localization
-    Google_LastUpdatedVersion: 1746936447959
+    Google_LastUpdatedVersion: 1747032737677
     Google_Password: change_this
     GoogleUpdateFrequency: 3
     GoogleInEditorCheckFrequency: 2

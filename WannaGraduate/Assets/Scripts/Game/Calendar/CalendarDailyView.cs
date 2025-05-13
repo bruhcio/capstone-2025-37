@@ -36,6 +36,15 @@ public class CalendarDailyView : UI_Base
         StartCoroutine(RollSymbolDirection());
     }
 
+    public void SetSymbol(int sid)
+    {
+        PlayerSaveDataModel.data.calendarSIds[calendarId] = sid;
+
+        // 심볼 초기화
+        InitSymbol();
+        UpdateView();
+    }
+
     // 심볼을 빈 상태로 만듭니다
     public void ClearSymbol()
     {

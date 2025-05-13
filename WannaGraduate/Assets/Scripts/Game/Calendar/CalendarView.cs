@@ -48,6 +48,7 @@ public class CalendarView : UI_Base
     // 일정 계획 스핀
     public void RollCalendar()
     {
+        inactiveSidForThisTurn.Clear();
         PlayerSaveDataModel.data.spinCount--;
         spinButton.interactable = false;
         ClearCalendar();
@@ -164,18 +165,40 @@ public class CalendarView : UI_Base
 
 
 
+    public static List<int> inactiveSidForThisTurn = new();
 
     // 특수 효과 재생
     private IEnumerator PlaySpecialEffect()
     {
-        for(int i = 0; i < PlayerSaveDataModel.data.calendarSIds.Count; i++)
+        List<int?> specialEffectExecuteOrder = new(PlayerSaveDataModel.data.calendarSIds);
+        specialEffectExecuteOrder.Sort((a, b) => {
+            if(a == null)
+            {
+                return 1;
+            }
+            else if(b == null)
+            {
+                return 0;
+            }
+
+            return CSVDataContainer_SymbolData.GetSymbolData(PlayerSaveDataModel.data.ownedSymbols[(int)b]).EffectPriority
+                - CSVDataContainer_SymbolData.GetSymbolData(PlayerSaveDataModel.data.ownedSymbols[(int)a]).EffectPriority;
+        });
+
+        for (int i = 0; i < specialEffectExecuteOrder.Count; i++)
         {
-            if (PlayerSaveDataModel.data.calendarSIds[i] == null)
+            if (specialEffectExecuteOrder[i] == null)
             {
                 continue;
             }
 
-            int sid = (int)PlayerSaveDataModel.data.calendarSIds[i];
+            int sid = (int)specialEffectExecuteOrder[i];
+
+            if (inactiveSidForThisTurn.Contains(sid))
+            {
+                continue;
+            }
+
             int symbolId = PlayerSaveDataModel.data.ownedSymbols[sid];
 
             List<int> interactedCalendarIdx = new();

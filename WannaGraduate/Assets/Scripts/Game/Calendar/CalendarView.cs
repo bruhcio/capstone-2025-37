@@ -11,6 +11,7 @@ using System.Linq;
 using System;
 using DG.Tweening;
 using UnityEngine.Purchasing;
+using LKAIROS.Assist;
 
 public class CalendarView : UI_Base
 {
@@ -77,7 +78,7 @@ public class CalendarView : UI_Base
 
         if (type == null)
         {
-            Debug.LogError($"Invalid trigger type for id={symbolId}");
+            Debug.LogWarning($"Invalid trigger type for id={symbolId}");
             return false;
         }
 
@@ -141,6 +142,8 @@ public class CalendarView : UI_Base
 
                     startIndex = i + 1;
 
+
+                    SoundManager.instance.Play("Sounds/SFX/Pop", false, false, 0, "SFX");
                     yield return new WaitForSeconds(0.5f);
                 }
             }
@@ -161,6 +164,30 @@ public class CalendarView : UI_Base
         }
 
         DominoEventSystem.Pub(EEventTypes.OnEarnBaseRevenueEnd);
+    }
+
+
+    public void ExecuteItemEffect(CSVDataRow_ItemData itemData, Action<IItemEffect> effectAction)
+    {
+        string typeName = "Item_" + itemData.Id;  // 예: "Item_IncreaseResearchPointEffect"
+        string assemblyQualifiedName = $"{typeName}, Assembly-CSharp"; // 어셈블리 이름은 프로젝트에 맞게 조정
+
+        // 리플렉션으로 효과 타입을 가져옵니다.
+        Type effectType = Type.GetType(assemblyQualifiedName);
+        if (effectType == null)
+        {
+            Debug.LogWarning($"Could not find effect type: {assemblyQualifiedName}");
+            return;
+        }
+
+        IItemEffect effectInstance = Activator.CreateInstance(effectType) as IItemEffect;
+        if (effectInstance == null)
+        {
+            Debug.LogWarning($"The created effect instance cannot be cast to IItemEffect: {assemblyQualifiedName}");
+            return;
+        }
+
+        effectAction?.Invoke(effectInstance);
     }
 
 
@@ -205,11 +232,12 @@ public class CalendarView : UI_Base
             if(CheckTrigger(i, out interactedCalendarIdx))
             {
                 // 심볼 흔들기
-                dayObjects[i].transform.DOScale(1.5f, 0.3f).SetEase(Ease.OutQuart);
+                dayObjects[i].transform.DOScale(1.3f, 0.3f).SetEase(Ease.OutQuart);
                 foreach(int idx in interactedCalendarIdx)
                 {
                     dayObjects[idx].transform.DOShakePosition(0.5f, 20f, 20, 90, false, false);
                 }
+                SoundManager.instance.Play("Sounds/SFX/Buff 3", false, false, 0, "SFX");
                 dayObjects[i].transform.DOShakePosition(0.5f, 20f, 20, 90, false, false);
                 yield return new WaitForSeconds(0.5f);
 
@@ -221,7 +249,7 @@ public class CalendarView : UI_Base
 
                 if (type == null)
                 {
-                    Debug.LogError($"Invalid special effect type for id={symbolId}");
+                    Debug.LogWarning($"Invalid special effect type for id={symbolId}");
                     continue;
                 }
 
@@ -246,6 +274,7 @@ public class CalendarView : UI_Base
         // Update day view
         for (int i = 0; i < dayObjects.Count; i++)
         {
+            SoundManager.instance.Play("Sounds/SFX/GachaDetail1", false, true, 0, "SFX");
             dayObjects[i].RollSymbol(i, OnCalendarDailyDirectionEnd);
             yield return new WaitForSeconds(0.02f);
         }

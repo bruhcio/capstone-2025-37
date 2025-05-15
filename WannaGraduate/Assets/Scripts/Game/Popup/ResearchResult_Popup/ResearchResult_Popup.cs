@@ -1,5 +1,6 @@
 using DominoGames.Core.EventSystem;
 using DominoGames.UI.PopupSystem;
+using LKAIROS.Assist;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -19,26 +20,31 @@ public class ResearchResult_Popup : PopupBase
 
     public override void OnShow(object args)
     {
+        SoundManager.instance.Play("Sounds/SFX/GachaDetail1", false, true, 0, "SFX");
         hideButton.interactable = false;
         StartCoroutine(PopupDirection());
     }
 
     IEnumerator PopupDirection()
     {
-        yield return new WaitForSeconds(0.5f);
         currentRPText.text = "";
         minusRPText.text = "";
         resultRPText.text = "";
+
+        yield return new WaitForSeconds(0.5f);
+        SoundManager.instance.Play("Sounds/SFX/BuySound1", false, true, 0, "SFX");
 
         currentRPText.text = PlayerSaveDataModel.data.researchPoint.ToString("N0");
         currentRPText.GetComponent<ObjectScaleBouncer>().PlayEffect();
 
         yield return new WaitForSeconds(0.35f);
+        SoundManager.instance.Play("Sounds/SFX/BuySound1", false, true, 0, "SFX");
 
         minusRPText.text = "<color=#FF7C7C>" + EnvVar.researchMinus[PlayerSaveDataModel.data.researchMinusIndex].ToString("N0") + "</color>";
         minusRPText.GetComponent<ObjectScaleBouncer>().PlayEffect();
 
         yield return new WaitForSeconds(0.35f);
+        SoundManager.instance.Play("Sounds/SFX/BuySound1", false, true, 0, "SFX");
 
         PlayerSaveDataModel.data.researchPoint -= EnvVar.researchMinus[PlayerSaveDataModel.data.researchMinusIndex];
         resultRPText.text = PlayerSaveDataModel.data.researchPoint.ToString("N0");
@@ -49,6 +55,8 @@ public class ResearchResult_Popup : PopupBase
 
     public void HidePopup()
     {
+        SoundManager.instance.Play("Sounds/SFX/ButtonClick", false, true, 0, "SFX");
+
         DominoEventSystem.Pub(EEventTypes.OnSymbolSelectEnd);
         PopupSystem.GameSceneJYS.ResearchResult_Popup.Hide();
 

@@ -10,7 +10,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
-using static PlayerSaveDataModel;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,31 +29,6 @@ public class GameManager : MonoBehaviour
 
 
     #region Private
-
-    public void ExecuteItemEffect(CSVDataRow_ItemData itemData, PlayerSaveDataModel playerData, Action<IItemEffect> effectAction)
-    {
-        string typeName = "Item_" + itemData.Id;  // 예: "Item_IncreaseResearchPointEffect"
-        string assemblyQualifiedName = $"{typeName}, Assembly-CSharp"; // 어셈블리 이름은 프로젝트에 맞게 조정
-
-        // 리플렉션으로 효과 타입을 가져옵니다.
-        Type effectType = Type.GetType(assemblyQualifiedName);
-        if (effectType == null)
-        {
-            Debug.LogError($"Could not find effect type: {assemblyQualifiedName}");
-            return;
-        }
-
-        IItemEffect effectInstance = Activator.CreateInstance(effectType) as IItemEffect;
-        if (effectInstance == null)
-        {
-            Debug.LogError($"The created effect instance cannot be cast to IItemEffect: {assemblyQualifiedName}");
-            return;
-        }
-
-        effectAction?.Invoke(effectInstance);
-    }
-
-
     private void RandomizeCalendar()
     {
         PlayerSaveDataModel.data.calendarSIds = PlayerSaveDataModel.data.ownedSymbols.Keys.Select<int, int?>(x => x).ToList();

@@ -1,6 +1,7 @@
 using BBB.CSVData;
 using DominoGames.Core.EventSystem;
 using DominoGames.RPG;
+using LKAIROS.Assist;
 using QFSW.QC.Utilities;
 using System;
 using System.Collections;
@@ -147,6 +148,7 @@ public class CalendarDailyView : UI_Base
             GetComponent<ObjectScaleBouncer>().PlayEffect();
         }
 
+        SoundManager.instance.Play("Sounds/SFX/buff2", false, true, 0, "SFX");
         yield return new WaitForSeconds(0.5f);
         this.onDailyDirectionEnd?.Invoke();
     }

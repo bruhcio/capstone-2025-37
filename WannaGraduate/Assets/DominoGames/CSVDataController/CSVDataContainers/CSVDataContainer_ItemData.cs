@@ -33,6 +33,11 @@ namespace BBB.CSVData
         {
             data = Resources.Load<CSVDataContainer_ItemData>("CSVData/ItemData");
         }
+
+        public static CSVDataRow_ItemData GetRandomItem()
+        {
+            return data.m_Items[Random.Range(0, data.m_Items.Length)];
+        }
     }
 
     // 아이템 발동 시점

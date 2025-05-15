@@ -16,7 +16,7 @@ public class EvolvingAfterTurnSpeialEffect : ISymbolSpecialEffect
         {
             int sid = (int)PlayerSaveDataModel.data.calendarSIds[selfCalendarIdx];
             PlayerSaveDataModel.data.RemoveOwnedSymbol(sid, selfCalendarIdx);
-            PlayerSaveDataModel.data.AddOwnedItem(int.Parse(parameter[1]));
+            PlayerSaveDataModel.data.AddOwnedSymbol(int.Parse(parameter[1]));
             CalendarView.Instance.dayObjects[selfCalendarIdx].SetSymbol(int.Parse(parameter[1]));
         }
     }
